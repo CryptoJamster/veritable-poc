@@ -1,27 +1,42 @@
-# syntax=docker/dockerfile:1.4
-
 FROM bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3
 
 # add in init command script with no secrets
-COPY <<EOF /home/indy/init.txt
-pool create mylocalpool gen_txn_file=/home/indy/pool_transactions_genesis
-pool connect mylocalpool
-wallet create Wtrustee key=wtrusteekey
-wallet open Wtrustee key=wtrusteekey
-did new did=V4SGRU86Z58d6TV7PBUe6f seed=000000000000000000000000Trustee1 metadata=trustee
-did use V4SGRU86Z58d6TV7PBUe6f
-ledger custom {"reqId":1646776289419356200,"identifier":"V4SGRU86Z58d6TV7PBUe6f","operation":{"type":"1","dest":"WEVUqNxskVCusLM2NRHnzU","role":"101","verkey":"~6ujbFkk3soieb5jZtaSyMn","alias":"issuer"},"protocolVersion":2} sign=true
-ledger custom {"reqId":1646776289419356201,"identifier":"V4SGRU86Z58d6TV7PBUe6f","operation":{"type":"1","dest":"EG88MxsfwCTydduSoSeG6j","role":"101","verkey":"~3AaQSKCJiK3w26Nps5o85V","alias":"regulator"},"protocolVersion":2} sign=true
-exit
-EOF
+RUN echo "pool create mylocalpool gen_txn_file=/home/indy/pool_transactions_genesis" >> /home/indy/init.txt && \
+echo "pool connect mylocalpool" >> /home/indy/init.txt && \
+echo "wallet create Wtrustee key=wtrusteekey" >> /home/indy/init.txt && \
+echo "wallet open Wtrustee key=wtrusteekey" >> /home/indy/init.txt && \
+echo "did new did=V4SGRU86Z58d6TV7PBUe6f seed=000000000000000000000000Trustee1 metadata=trustee" >> /home/indy/init.txt && \
+echo "did use V4SGRU86Z58d6TV7PBUe6f" >> /home/indy/init.txt && \
+echo "ledger custom {\"reqId\":1646776289419356200,\"identifier\":\"V4SGRU86Z58d6TV7PBUe6f\",\"operation\":{\"type\":\"1\",\"dest\":\"WEVUqNxskVCusLM2NRHnzU\",\"role\":\"101\",\"verkey\":\"~6ujbFkk3soieb5jZtaSyMn\",\"alias\":\"issuer\"},\"protocolVersion\":2} sign=true" >> /home/indy/init.txt && \
+echo "ledger custom {\"reqId\":1646776289419356201,\"identifier\":\"V4SGRU86Z58d6TV7PBUe6f\",\"operation\":{\"type\":\"1\",\"dest\":\"EG88MxsfwCTydduSoSeG6j\",\"role\":\"101\",\"verkey\":\"~3AaQSKCJiK3w26Nps5o85V\",\"alias\":\"regulator\"},\"protocolVersion\":2} sign=true" >> /home/indy/init.txt && \
+echo "exit" >> /home/indy/init.txt
 
-COPY --chown=indy:indy --chmod=744 <<EOF /home/indy/run.sh
-#!/bin/bash
-set -ex
+# COPY <<EOF /home/indy/init.txt
+# pool create mylocalpool gen_txn_file=/home/indy/pool_transactions_genesis
+# pool connect mylocalpool
+# wallet create Wtrustee key=wtrusteekey
+# wallet open Wtrustee key=wtrusteekey
+# did new did=V4SGRU86Z58d6TV7PBUe6f seed=000000000000000000000000Trustee1 metadata=trustee
+# did use V4SGRU86Z58d6TV7PBUe6f
+# ledger custom {"reqId":1646776289419356200,"identifier":"V4SGRU86Z58d6TV7PBUe6f","operation":{"type":"1","dest":"WEVUqNxskVCusLM2NRHnzU","role":"101","verkey":"~6ujbFkk3soieb5jZtaSyMn","alias":"issuer"},"protocolVersion":2} sign=true
+# ledger custom {"reqId":1646776289419356201,"identifier":"V4SGRU86Z58d6TV7PBUe6f","operation":{"type":"1","dest":"EG88MxsfwCTydduSoSeG6j","role":"101","verkey":"~3AaQSKCJiK3w26Nps5o85V","alias":"regulator"},"protocolVersion":2} sign=true
+# exit
+# EOF
 
-curl http://\${VON_NETWORK_WEB_HOST}:8000/genesis -o /home/indy/pool_transactions_genesis
-indy-cli /home/indy/init.txt
-EOF
+# COPY --chown=indy:indy --chmod=744 <<EOF /home/indy/run.sh
+# #!/bin/bash
+# set -ex
+
+# curl http://\${VON_NETWORK_WEB_HOST}:8000/genesis -o /home/indy/pool_transactions_genesis
+# indy-cli /home/indy/init.txt
+# EOF
+
+RUN echo "#!/bin/bash" >> /home/indy/run.sh && \
+echo "set -ex" >> /home/indy/run.sh && \
+echo "curl http://\${VON_NETWORK_WEB_HOST}:8000/genesis -o /home/indy/pool_transactions_genesis" >> /home/indy/run.sh && \
+echo "indy-cli /home/indy/init.txt" >> /home/indy/run.sh
+
+RUN chmod +x /home/indy/run.sh
 
 ENV VON_NETWORK_WEB_HOST=webserver
 
