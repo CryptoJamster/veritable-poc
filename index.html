@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Call Demo</title> <!-- Set the title of the web page -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>API Call Demo</h1> <!-- Display a heading on the web page -->
+    <button id="callApiButton">Call API</button> <!-- Create a button element with an ID for calling the API -->
+    <div id="apiResponse"></div> <!-- Create a div element with an ID for displaying the API response -->
+
+    <!-- Include an external JavaScript file "app.js" -->
+    <script src="app.js"></script>
+
+    <script>
+        const callApiButton = document.getElementById("callApiButton"); // Get the button element by its ID
+        const apiResponse = document.getElementById("apiResponse"); // Get the div element for displaying the API response
+
+        // Add a click event listener to the button
+        callApiButton.addEventListener("click", async () => {
+            try {
+                // Send an HTTP GET request to "http://localhost:3200/create-invitation"
+                const response = await fetch("http://localhost:3200/create-invitation");
+                
+                // Parse the JSON response
+                const data = await response.json();
+                
+                // Display the JSON data as a string inside the div
+                apiResponse.innerHTML = JSON.stringify(data);
+            } catch (error) {
+                // Handle errors: display an error message in the div
+                apiResponse.innerHTML = "Error: " + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
