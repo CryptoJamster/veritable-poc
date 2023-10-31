@@ -1,55 +1,87 @@
-// Import necessary libraries and modules
-const express = require("express"); // For creating the Express app
-const axios = require('axios');     // For making HTTP requests
-const cors = require("cors");       // For enabling Cross-Origin Resource Sharing (CORS)
+const express = require("express");
+const axios = require('axios');
+const cors = require("cors");
 
-// Create an Express application
 const app = express();
-const port = 3200; // Define the port where the server will listen
+const port = 3200;
 
-// Enable CORS for all routes to allow requests from other origins
 app.use(cors());
 
-// Define a route that responds to HTTP GET requests at "/create-invitation"
 app.get("/create-invitation", async (req, res) => {
   try {
-    // Create an empty JSON object as the request data
+    // Step 1: Create an empty JSON object as the request data
     const data = JSON.stringify({});
-
-    // Log the request data
     console.log("Data output", data);
 
-    // Configure an HTTP POST request
-    const config = {
+    // Step 2: Configure an HTTP POST request to create an invitation
+    const configCreateInvitation = {
       method: 'post',
       maxBodyLength: Infinity,
       url: 'http://localhost:8021/connections/create-invitation',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      data: data
+      data: data,
+    };
+    console.log("Config output", configCreateInvitation);
+
+    // Step 3: Send the request to create an invitation
+    const responseCreateInvitation = await axios.request(configCreateInvitation);
+    console.log("Response output", responseCreateInvitation.data);
+
+    // Step 4: Extract the "invitation" and "connection_id" from the response
+    const invitation = responseCreateInvitation.data.invitation;
+    const connectionId = responseCreateInvitation.data.connection_id;
+
+    // Step 5: Configure an HTTP POST request to receive the invitation
+    const receiveInvitationConfig = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: 'http://localhost:8041/connections/receive-invitation',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: JSON.stringify(invitation),
     };
 
-    // Log the request configuration
-    console.log("Config output", config);
+    // Step 6: Send the request to receive the invitation
+    const receiveInvitationResponse = await axios.request(receiveInvitationConfig);
+    console.log("Receive Invitation Response", receiveInvitationResponse.data);
 
-    // Send the HTTP request and await the response
-    const response = await axios.request(config);
+    // Step 7: Construct the URL for the send-message endpoint
+    const sendMessageUrl = `http://localhost:8021/connections/${connectionId}/send-message`;
+    
+    // Step 8: Use the query parameter or a default message
+    const messageContent = req.query.messageContent || "SELECT * FROM DUAL;"; 
 
-    // Log the response data
-    console.log("Response output", response.data);
+    // Step 9: Define the JSON body for the send-message request using the user's input
+    const sendMessageBody = {
+      content: messageContent,
+    };
 
-    // Extract the "connection_id" from the response and send it as a JSON response
-    const connectionId = response.data.connection_id;
-    res.json({ connection_id: connectionId });
+    // Step 10: Configure an HTTP POST request to send a message to the connection
+    const sendMessageConfig = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: sendMessageUrl,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: JSON.stringify(sendMessageBody),
+    };
+
+    // Step 11: Send the message to the connection
+    const sendMessageResponse = await axios.request(sendMessageConfig);
+    console.log("Send Message Response", sendMessageResponse.data);
+
+    // Step 12: Return the response body from the /create-invitation endpoint
+    res.json(sendMessageResponse.data);
   } catch (error) {
-    // Handle errors: log the error and send a 500 Internal Server Error response
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
-// Start the Express server and log the server's address and port
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
