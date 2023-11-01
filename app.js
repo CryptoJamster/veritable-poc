@@ -7,6 +7,9 @@ const port = 3200;
 
 app.use(cors());
 
+let connectionIdGlobal = "";
+console.log("Connection ID Global", connectionIdGlobal);
+
 app.get("/create-invitation", async (req, res) => {
   try {
     // Step 1: Create an empty JSON object as the request data
@@ -31,7 +34,9 @@ app.get("/create-invitation", async (req, res) => {
 
     // Step 4: Extract the "invitation" and "connection_id" from the response
     const invitation = responseCreateInvitation.data.invitation;
-    const connectionId = responseCreateInvitation.data.connection_id;
+    console.log("Response output", invitation);
+
+    connectionIdGlobal = responseCreateInvitation.data.connection_id;
 
     // Step 5: Configure an HTTP POST request to receive the invitation
     const receiveInvitationConfig = {
@@ -41,45 +46,42 @@ app.get("/create-invitation", async (req, res) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      data: JSON.stringify(invitation),
+      data: invitation,
     };
 
     // Step 6: Send the request to receive the invitation
     const receiveInvitationResponse = await axios.request(receiveInvitationConfig);
     console.log("Receive Invitation Response", receiveInvitationResponse.data);
 
-    // Step 7: Construct the URL for the send-message endpoint
-    const sendMessageUrl = `http://localhost:8021/connections/${connectionId}/send-message`;
-    
-    // Step 8: Use the query parameter or a default message
-    const messageContent = req.query.messageContent || "SELECT * FROM DUAL;"; 
-
-    // Step 9: Define the JSON body for the send-message request using the user's input
-    const sendMessageBody = {
-      content: messageContent,
-    };
-
-    // Step 10: Configure an HTTP POST request to send a message to the connection
-    const sendMessageConfig = {
-      method: 'post',
-      maxBodyLength: Infinity,
-      url: sendMessageUrl,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: JSON.stringify(sendMessageBody),
-    };
-
-    // Step 11: Send the message to the connection
-    const sendMessageResponse = await axios.request(sendMessageConfig);
-    console.log("Send Message Response", sendMessageResponse.data);
-
-    // Step 12: Return the response body from the /create-invitation endpoint
-    res.json(sendMessageResponse.data);
+    // Step 7: Return the response body from the /create-invitation endpoint
+    res.json(receiveInvitationResponse.data);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+app.get("/hardcoded-connection-msg", async (req, res) => {
+
+  const axios = require('axios');
+  let data = JSON.stringify({
+    content: req.query.messageContent || "SELECT D.* FROM DUAL D;",
+  });
+  console.log("Data:", data);
+  
+  let config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: `http://localhost:8021/connections/${connectionIdGlobal}/send-message`,
+    headers: { 
+      'Content-Type': 'application/json'
+    },
+    data : data
+  };
+  
+  const response = await axios.request(config);
+  console.log("Response", response.data);
+  res.json(response.data);
 });
 
 app.listen(port, () => {

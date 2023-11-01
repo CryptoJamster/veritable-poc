@@ -1,7 +1,8 @@
 /* styles.css */
+
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,18 +10,17 @@ body {
 
 h1 {
     color: #333;
-    font-size: 28px;
 }
 
 button {
     background-color: #0073e6;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -28,21 +28,20 @@ button:hover {
 }
 
 #apiResponse {
+    display: none; /* Hide the element by default */
     margin-top: 20px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
 }
 
 #messageContent {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
-    background-color: #ffffff;
 }

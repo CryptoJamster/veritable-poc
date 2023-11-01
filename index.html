@@ -8,9 +8,9 @@
     <h1>DIDComm Query</h1> <!-- Display a heading on the web page -->
     
     <!-- Add an input element for message content -->
-    <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT * FROM DUAL;">
+    <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT D.* FROM DUAL D;">
     
-    <!-- Create a button element with an ID for calling the API -->
+    <!-- Create a button element with an ID for calling the combined API actions -->
     <button id="callApiButton">Send query</button>
     
     <!-- Create a div element with an ID for displaying the API response -->
@@ -28,14 +28,27 @@
             try {
                 const messageContent = messageContentInput.value; // Get the content from the input
 
-                // Send an HTTP GET request to "http://localhost:3200/create-invitation" with the message content
-                const response = await fetch(`http://localhost:3200/create-invitation?messageContent=${messageContent}`);
+                // Step 1: Send an HTTP GET request to "http://localhost:3200/create-invitation" with the message content
+                const createInvitationResponse = await fetch(`http://localhost:3200/create-invitation`);
+                console.log("Create Invitation Response: " + createInvitationResponse.data);
 
-                // Parse the JSON response
-                const data = await response.json();
+                // Parse the JSON response for creating an invitation
+                const invitationData = await createInvitationResponse.json();
 
-                // Display the JSON data as a string inside the div
-                apiResponse.innerHTML = JSON.stringify(data);
+                // Introduce a 1-second delay
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                // Step 2: Send an HTTP GET request to "http://localhost:3200/hardcoded-connection-msg" with the message content
+                const sendHardcodedMsgResponse = await fetch(`http://localhost:3200/hardcoded-connection-msg?messageContent=${messageContent}`);
+
+                // Parse the JSON response for sending a hardcoded message
+                const sendHardcodedMsgData = await sendHardcodedMsgResponse.json();
+
+                // Append the response of sending the hardcoded message to the previous response
+                apiResponse.innerHTML += JSON.stringify(sendHardcodedMsgData);
+
+                // Show the #apiResponse element
+                apiResponse.style.display = "block";
             } catch (error) {
                 // Handle errors: display an error message in the div
                 apiResponse.innerHTML = "Error: " + error.message;
