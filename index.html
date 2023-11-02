@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DIDComm Query (Alice to Bob)</title> <!-- Set the title of the web page -->
+    <title>DIDComm Query (Alice to Bob)</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>DIDComm Query</h1> <!-- Display a heading on the web page -->
+    <h1>DIDComm Query</h1>
     
-    <!-- Add an input element for message content -->
-    <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT D.* FROM DUAL D;">
+    <!-- Input element for message content -->
+    <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT * FROM DUAL;">
     
-    <!-- Create a button element with an ID for calling the combined API actions -->
+    <!-- Button to trigger API actions -->
     <button id="callApiButton">Send query</button>
     
-    <!-- Create a div element with an ID for displaying the API response -->
+    <!-- Element to display API responses -->
     <div id="apiResponse"></div>
 
     <!-- Include an external JavaScript file "app.js" -->
     <script src="app.js"></script>
 
     <script>
+        // Get references to HTML elements
         const callApiButton = document.getElementById("callApiButton");
         const apiResponse = document.getElementById("apiResponse");
-        const messageContentInput = document.getElementById("messageContent"); // Get the message input element
+        const messageContentInput = document.getElementById("messageContent");
 
+        // Add a click event listener to the button
         callApiButton.addEventListener("click", async () => {
             try {
-                const messageContent = messageContentInput.value; // Get the content from the input
+                const messageContent = messageContentInput.value;
 
-                // Step 1: Send an HTTP GET request to "http://localhost:3200/create-invitation" with the message content
+                // Step 1: Send an HTTP GET request to create an invitation
                 const createInvitationResponse = await fetch(`http://localhost:3200/create-invitation`);
                 console.log("Create Invitation Response: " + createInvitationResponse.data);
 
@@ -38,14 +40,24 @@
                 // Introduce a 1-second delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
-                // Step 2: Send an HTTP GET request to "http://localhost:3200/hardcoded-connection-msg" with the message content
-                const sendHardcodedMsgResponse = await fetch(`http://localhost:3200/hardcoded-connection-msg?messageContent=${messageContent}`);
+                // Step 2: Send an HTTP GET request to receive an invitation
+                const receiveInvitationResponse = await fetch(`http://localhost:3200/receive-invitation`);
+                console.log("Receive Invitation Response: " + receiveInvitationResponse.data);
 
-                // Parse the JSON response for sending a hardcoded message
-                const sendHardcodedMsgData = await sendHardcodedMsgResponse.json();
+                // Parse the JSON response for receiving an invitation
+                const receiveInvitationData = await receiveInvitationResponse.json();
 
-                // Append the response of sending the hardcoded message to the previous response
-                apiResponse.innerHTML += JSON.stringify(sendHardcodedMsgData);
+                // Introduce a 1-second delay
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                // Step 3: Send an HTTP GET request to send a message
+                const sendMessageResponse = await fetch(`http://localhost:3200/send-message?messageContent=${messageContent}`);
+
+                // Parse the JSON response for sending a message
+                const sendMessageData = await sendMessageResponse.json();
+
+                // Append the response of sending the message to the previous responses
+                apiResponse.innerHTML = JSON.stringify(sendMessageData);
 
                 // Show the #apiResponse element
                 apiResponse.style.display = "block";
