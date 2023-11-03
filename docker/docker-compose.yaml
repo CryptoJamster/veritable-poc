@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  webhook-server:
-    image: ghcr.io/timoglastra/acapy-development-webhook-server:latest
-    ports:
-      - 1080:1080
+  # webhook-server:
+  #   image: ghcr.io/timoglastra/acapy-development-webhook-server:latest
+  #   ports:
+  #     - 1080:1080
   veritable-demo-init:
     build:
       context: .
@@ -15,7 +15,7 @@ services:
   cloudagent-issuer:
     image: bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3
     container_name: veritable-cloudagent-issuer
-    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://localhost:1080'
+    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002'
     restart: on-failure:10
     env_file: ./AriesCloudAgentCommon.env
     environment:
@@ -88,7 +88,7 @@ services:
   cloudagent-verifier:
     image: bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3
     container_name: veritable-cloudagent-verifier
-    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://localhost:1080'
+    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://host.docker.internal:1080'
     restart: on-failure:10
     env_file: ./AriesCloudAgentCommon.env
     environment:

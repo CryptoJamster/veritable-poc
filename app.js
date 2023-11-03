@@ -2,6 +2,7 @@
 const express = require("express");
 const axios = require('axios');
 const cors = require("cors");
+const fs = require("fs");
 
 // Create an Express application
 const app = express();
@@ -118,6 +119,20 @@ app.get("/send-message", async (req, res) => {
 
     // Step 14: Return the response data
     res.send(response.data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal server error');
+  }
+});
+
+// Define an endpoint to retrieve the latest message
+app.get("/get-latest-message", (req, res) => {
+  try {
+    // Step 1: Read the contents of the file created by webhook.js
+    const content = fs.readFileSync("./payload.txt", "utf8");
+
+    // Step 2: Return the content as a response
+    res.status(200).send(content);
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal server error');
