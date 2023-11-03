@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# START WEBHOOK SERVER
+docker compose -f ./docker/docker-compose.yaml -p veritable-demo up -d webhook-server
+
+# Wait for a few seconds before starting the agent
+sleep 5
+
 # START VON
 cd von-network/
 VONIMAGE=`docker images | grep von-network`

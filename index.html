@@ -49,18 +49,23 @@
 
                 // Introduce a 1-second delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
-
+                
                 // Step 3: Send an HTTP GET request to send a message
                 const sendMessageResponse = await fetch(`http://localhost:3200/send-message?messageContent=${messageContent}`);
 
-                // Parse the JSON response for sending a message
-                const sendMessageData = await sendMessageResponse.json();
-
-                // Append the response of sending the message to the previous responses
-                apiResponse.innerHTML = JSON.stringify(sendMessageData);
+                if (sendMessageResponse.ok) {
+                    // If the response is OK (status code 200), display the JSON response
+                    const sendMessageData = await sendMessageResponse.json();
+                    apiResponse.innerHTML = JSON.stringify(sendMessageData);
+                } else {
+                    // If the response is not OK (e.g., status code 400), display the error message as text
+                    const errorText = await sendMessageResponse.text();
+                    apiResponse.innerHTML = "Error: " + errorText;
+                }
 
                 // Show the #apiResponse element
                 apiResponse.style.display = "block";
+
             } catch (error) {
                 // Handle errors: display an error message in the div
                 apiResponse.innerHTML = "Error: " + error.message;

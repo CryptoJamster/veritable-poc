@@ -87,8 +87,14 @@ app.get("/receive-invitation", async (req, res) => {
 app.get("/send-message", async (req, res) => {
   try {
     // Step 10: Prepare the message content
+    const messageContent = req.query.messageContent;
+
+    if (!messageContent || messageContent.trim() === "") {
+      return res.status(400).send('Message content cannot be blank.');
+    }
+
     let data = JSON.stringify({
-      content: req.query.messageContent || "SELECT D.* FROM DUAL D;",
+      content: messageContent,
     });
     console.log("Data:", data);
 
@@ -111,10 +117,10 @@ app.get("/send-message", async (req, res) => {
     console.log("Response", response.data);
 
     // Step 14: Return the response data
-    res.json(response.data);
+    res.send(response.data);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).send('Internal server error');
   }
 });
 
