@@ -5,5 +5,5 @@ cd ./von-network
 sleep 1
 cd ../
 sleep 0.1
-kill -9 $(ps | grep node | grep react | cut -d ' ' -f1)
+ps aux | grep -E "node|react|python3" | awk '{print $1}' | xargs kill -9
 echo DONE

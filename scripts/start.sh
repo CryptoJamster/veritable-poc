@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# START WEBHOOK SERVER
-docker compose -f ./docker/docker-compose.yaml -p veritable-demo up -d webhook-server
-
-# Wait for a few seconds before starting the agent
-sleep 5
-
 # START VON
 cd von-network/
 VONIMAGE=`docker images | grep von-network`
@@ -28,6 +22,15 @@ echo -en "\n\nWaitingForIssuerReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1
 echo -en "\n\nWaitingForHolderReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1; RES=$(curl -sf localhost:3001 2>&1); echo -n .; done
 echo -en "\n\nWaitingForVerifierReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1; RES=$(curl -sf localhost:3003 2>&1); echo -n .; done
 echo -en "\n\nWaitingForRegulatorReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1; RES=$(curl -sf localhost:3004 2>&1); echo -n .; done
+
+# Start Python HTTP server
+echo "Starting Python HTTP server..."
+python3 -m http.server --bind 127.0.0.1 > /dev/null 2>&1 & 
+
+# Start your Node.js applications
+echo "Starting Node.js applications..."
+node webhook.js > /dev/null 2>&1 &
+node app.js > /dev/null 2>&1 &
 
 # ABOUT LOGS
 echo -e "\n\nAll the backend and frontend logs are ready to be viewed."
