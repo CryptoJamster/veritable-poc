@@ -1,10 +1,6 @@
 version: '3'
 
 services:
-  # webhook-server:
-  #   image: ghcr.io/timoglastra/acapy-development-webhook-server:latest
-  #   ports:
-  #     - 1080:1080
   veritable-demo-init:
     build:
       context: .
