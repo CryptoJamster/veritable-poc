@@ -38,7 +38,7 @@
                 const invitationData = await createInvitationResponse.json();
 
                 // Introduce a 1-second delay
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                await new Promise(resolve => setTimeout(resolve, 100));
 
                 // Step 2: Send an HTTP GET request to receive an invitation
                 const receiveInvitationResponse = await fetch(`http://localhost:3200/receive-invitation`);
@@ -48,12 +48,15 @@
                 const receiveInvitationData = await receiveInvitationResponse.json();
 
                 // Introduce a 1-second delay
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                await new Promise(resolve => setTimeout(resolve, 100));
                 
                 const fileContentsElement = document.getElementById("apiResponse"); // Reuse the apiResponse element
 
                 // Step 3: Send an HTTP GET request to send a message
                 const sendMessageResponse = await fetch(`http://localhost:3200/send-message?messageContent=${messageContent}`);
+
+                // Introduce a 1-second delay
+                await new Promise(resolve => setTimeout(resolve, 100));
 
                 if (sendMessageResponse.ok) {
                     // If the response is OK (status code 200), display the file contents in apiResponse
