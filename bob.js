@@ -3,13 +3,26 @@ const express = require("express");
 const axios = require('axios');
 const cors = require("cors");
 const fs = require("fs");
+const path = require('path');
+const bodyParser = require("body-parser");
 
 // Create an Express application
 const app = express();
-const port = 3200;
+const port = 3201;
+
+// Serve static files from the "public" folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route for serving your HTML file
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'bob.html'));
+});
 
 // Enable Cross-Origin Resource Sharing (CORS)
 app.use(cors());
+
+// Enable JSON Body Parser
+app.use(bodyParser.json());
 
 // Global variables to store data
 let responseCreateInvitationGlobal = "";
@@ -27,7 +40,7 @@ app.get("/create-invitation", async (req, res) => {
     const configCreateInvitation = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8021/connections/create-invitation',
+      url: 'http://localhost:8041/connections/create-invitation',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -65,7 +78,7 @@ app.get("/receive-invitation", async (req, res) => {
     const receiveInvitationConfig = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8041/connections/receive-invitation',
+      url: 'http://localhost:8021/connections/receive-invitation',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -106,7 +119,7 @@ app.get("/send-message", async (req, res) => {
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `http://localhost:8021/connections/${connectionIdGlobal}/send-message`,
+      url: `http://localhost:8041/connections/${connectionIdGlobal}/send-message`,
       headers: {
         'Content-Type': 'application/json'
       },
@@ -128,8 +141,8 @@ app.get("/send-message", async (req, res) => {
 // Define an endpoint to retrieve the latest message
 app.get("/get-latest-message", (req, res) => {
   try {
-    // Step 1: Read the contents of the file created by webhook.js
-    const content = fs.readFileSync("./payload.txt", "utf8");
+    // Step 1: Read the contents of the file created by webhook-bob.js
+    const content = fs.readFileSync("bob_payloads/payload.txt", "utf8");
 
     // Step 2: Return the content as a response
     res.status(200).send(content);
@@ -139,7 +152,6 @@ app.get("/get-latest-message", (req, res) => {
   }
 });
 
-// Start the server
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });

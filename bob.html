@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DIDComm Query (Alice to Bob)</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>DIDComm Query (Bob)</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
-    <h1>DIDComm Query</h1>
+    <h1>DIDComm Query (Bob)</h1>
     
     <!-- Input element for message content -->
     <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT * FROM DUAL;">
@@ -17,7 +17,7 @@
     <div id="apiResponse"></div>
 
     <!-- Include an external JavaScript file "app.js" -->
-    <script src="app.js"></script>
+    <script src="bob.js"></script>
 
     <script>
         // Get references to HTML elements
@@ -31,36 +31,36 @@
                 const messageContent = messageContentInput.value;
 
                 // Step 1: Send an HTTP GET request to create an invitation
-                const createInvitationResponse = await fetch(`http://localhost:3200/create-invitation`);
+                const createInvitationResponse = await fetch(`http://localhost:3201/create-invitation`);
                 console.log("Create Invitation Response: " + createInvitationResponse.data);
 
                 // Parse the JSON response for creating an invitation
                 const invitationData = await createInvitationResponse.json();
 
                 // Introduce a 1-second delay
-                await new Promise(resolve => setTimeout(resolve, 100));
+                await new Promise(resolve => setTimeout(resolve, 1000));
 
                 // Step 2: Send an HTTP GET request to receive an invitation
-                const receiveInvitationResponse = await fetch(`http://localhost:3200/receive-invitation`);
+                const receiveInvitationResponse = await fetch(`http://localhost:3201/receive-invitation`);
                 console.log("Receive Invitation Response: " + receiveInvitationResponse.data);
 
                 // Parse the JSON response for receiving an invitation
                 const receiveInvitationData = await receiveInvitationResponse.json();
 
                 // Introduce a 1-second delay
-                await new Promise(resolve => setTimeout(resolve, 100));
+                await new Promise(resolve => setTimeout(resolve, 1000));
                 
                 const fileContentsElement = document.getElementById("apiResponse"); // Reuse the apiResponse element
 
                 // Step 3: Send an HTTP GET request to send a message
-                const sendMessageResponse = await fetch(`http://localhost:3200/send-message?messageContent=${messageContent}`);
+                const sendMessageResponse = await fetch(`http://localhost:3201/send-message?messageContent=${messageContent}`);
 
                 // Introduce a 1-second delay
-                await new Promise(resolve => setTimeout(resolve, 100));
+                await new Promise(resolve => setTimeout(resolve, 1000));
 
                 if (sendMessageResponse.ok) {
                     // If the response is OK (status code 200), display the file contents in apiResponse
-                    const fileContents = await fetch("http://localhost:3200/get-latest-message"); // Fetch the file contents
+                    const fileContents = await fetch("http://localhost:3201/get-latest-message"); // Fetch the file contents
                     const fileText = await fileContents.text(); // Assuming the content is plain text
                     fileContentsElement.textContent = fileText;
                 } else {

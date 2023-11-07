@@ -45,3 +45,26 @@ button:hover {
     margin-top: 10px;
     font-size: 16px;
 }
+
+/* Style the dropdown (select) element */
+#personaSelect {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff; /* Background color for the dropdown */
+    color: #333; /* Text color for the dropdown */
+}
+
+/* Style the dropdown options */
+#personaSelect option {
+    background-color: #fff; /* Background color for the options */
+    color: #333; /* Text color for the options */
+}
+
+/* Add some spacing between the dropdown and other elements */
+#personaSelect + input,
+#personaSelect + button {
+    margin-top: 10px;
+}
