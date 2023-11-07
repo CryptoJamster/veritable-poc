@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create the logs directory if it doesn't exist
+mkdir -p logs
+
 # START VON
 cd von-network/
 VONIMAGE=`docker images | grep von-network`
@@ -25,8 +28,6 @@ echo -en "\n\nWaitingForRegulatorReact"; RES=""; while [[ -z "$RES" ]]; do sleep
 
 # Start your Node.js applications
 echo "Starting Node.js applications..."
-#node webhook-alice.js > /dev/null 2>&1 &
-#node webhook-bob.js > /dev/null 2>&1 &
 node webhook-alice.js > logs/webhook-alice.log 2>&1 &
 node webhook-bob.js > logs/webhook-bob.log 2>&1 &
 node alice.js > logs/alice.log 2>&1 &
