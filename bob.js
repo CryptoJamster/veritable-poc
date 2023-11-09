@@ -1,10 +1,10 @@
 // Import required packages
-const express = require("express");
+const express = require('express');
 const axios = require('axios');
-const cors = require("cors");
-const fs = require("fs");
+const cors = require('cors');
+const fs = require('fs');
 const path = require('path');
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
 
 // Create an Express application
 const app = express();
@@ -15,7 +15,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for serving your HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'bob.html'));
+  res.sendFile(path.join(__dirname, '/public/bob.html'));
+});
+
+// Serve the alice.js file with the appropriate Content-Type
+app.get('/bob.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'bob.js'));
+  res.setHeader('Content-Type', 'text/javascript');
 });
 
 // Enable Cross-Origin Resource Sharing (CORS)
@@ -34,7 +40,6 @@ app.get("/create-invitation", async (req, res) => {
   try {
     // Step 1: Prepare an empty JSON object as the request data
     const data = JSON.stringify({});
-    console.log("Data output", data);
 
     // Step 2: Configure an HTTP POST request to create an invitation
     const configCreateInvitation = {
@@ -46,15 +51,15 @@ app.get("/create-invitation", async (req, res) => {
       },
       data: data,
     };
-    console.log("Config output", configCreateInvitation);
+    console.log("Invitation message", configCreateInvitation);
 
     // Step 3: Send the request to create an invitation
     responseCreateInvitationGlobal = await axios.request(configCreateInvitation);
-    console.log("Create invitation response", responseCreateInvitationGlobal.data);
+    console.log("Invitation response", responseCreateInvitationGlobal.data);
 
     // Step 4: Extract the invitation from the response
     invitationBodyGlobal = responseCreateInvitationGlobal.data.invitation;
-    console.log("Invitation body response", invitationBodyGlobal);
+    console.log("Invitation body", invitationBodyGlobal);
 
     // Step 5: Return the response data
     res.json(responseCreateInvitationGlobal.data);
@@ -87,7 +92,7 @@ app.get("/receive-invitation", async (req, res) => {
 
     // Step 8: Send the request to receive the invitation
     const receiveInvitationResponse = await axios.request(receiveInvitationConfig);
-    console.log("Receive invitation response", receiveInvitationResponse.data);
+    console.log("Accept invitation response", receiveInvitationResponse.data);
 
     // Step 9: Return the response data
     res.json(receiveInvitationResponse.data);
@@ -110,10 +115,11 @@ app.get("/send-message", async (req, res) => {
     let data = JSON.stringify({
       content: messageContent,
     });
-    console.log("Data:", data);
+    console.log("Message content", data);
 
     // Step 11: Retrieve the connection ID from the global variable
     connectionIdGlobal = responseCreateInvitationGlobal.data.connection_id;
+    console.log("Connection ID", connectionIdGlobal);
 
     // Step 12: Configure an HTTP POST request to send the message
     let config = {
@@ -128,7 +134,7 @@ app.get("/send-message", async (req, res) => {
 
     // Step 13: Send the message and handle the response
     const response = await axios.request(config);
-    console.log("Response", response.data);
+    console.log("Send message response", response.data);
 
     // Step 14: Return the response data
     res.send(response.data);

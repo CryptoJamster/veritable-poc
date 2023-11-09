@@ -16,8 +16,9 @@
     <!-- Element to display API responses -->
     <div id="apiResponse"></div>
 
-    <!-- Include an external JavaScript file "app.js" -->
-    <script src="alice.js"></script>
+    <div id="logContainer">
+        <h2>Log Output:</h2>
+      </div>
 
     <script>
         // Get references to HTML elements
@@ -70,12 +71,42 @@
                 }
 
                 // Show the #apiResponse element
-                fileContentsElement.style.display = "block";
+                fileContentsElement.style.display = "block";               
             } catch (error) {
                 // Handle errors: display an error message in the div
                 apiResponse.innerHTML = "Error: " + error.message;
             }
-        });
+            });
+
+            try {
+            // Get references to HTML elements
+            const logContainer = document.getElementById("logContainer"); // Container for log content
+
+            // Function to append log content
+            function appendLogContent(logText) {
+                const logMessage = document.createElement("p");
+                logMessage.textContent = logText;
+                logContainer.appendChild(logMessage);
+                // Scroll to the bottom
+                logContainer.scrollTop = logContainer.scrollHeight;
+            }
+
+            // Establish an SSE connection to receive log updates
+            const logSSE = new EventSource("http://localhost:1080/log-sse");
+            console.log("Connected to log SSE");
+
+            // Listen for log updates from the server
+            logSSE.addEventListener("message", (event) => {
+                const logText = event.data;
+                appendLogContent(logText);
+            });
+
+            logContainer.style.display = "block";
+        } catch (error) {
+            // Handle errors: display an error message in the div
+            console.error("SSE Error:", error);
+            logContainer.innerHTML = "Error: " + error.message;
+        }
     </script>
 </body>
 </html>
