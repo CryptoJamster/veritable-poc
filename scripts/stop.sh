@@ -7,5 +7,5 @@ cd ../
 sleep 0.1
 rm -R logs
 rm -R *_payloads
-ps aux | grep -E "node|react" | awk '{print $2}' | xargs kill -9
+ps aux | grep -E "node|react" | awk '{print ($1 ~ /^[0-9]+$/ ? $1 : $2)}' | xargs kill -9
 echo DONE
