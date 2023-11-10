@@ -11,7 +11,7 @@ services:
   cloudagent-issuer:
     image: bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3
     container_name: veritable-cloudagent-issuer
-    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://host.docker.internal:1080'
+    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://172.17.0.1:1080'
     restart: on-failure:10
     env_file: ./AriesCloudAgentCommon.env
     environment:
@@ -84,7 +84,7 @@ services:
   cloudagent-verifier:
     image: bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3
     container_name: veritable-cloudagent-verifier
-    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://host.docker.internal:1081'
+    command: 'start --inbound-transport http 0.0.0.0 8000 --inbound-transport ws 0.0.0.0 8001 --admin 0.0.0.0 8002 --webhook-url http://172.17.0.1:1081'
     restart: on-failure:10
     env_file: ./AriesCloudAgentCommon.env
     environment:

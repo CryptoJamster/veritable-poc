@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/bob.html'));
 });
 
-// Serve the alice.js file with the appropriate Content-Type
+// Serve the bob.js file with the appropriate Content-Type
 app.get('/bob.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'bob.js'));
   res.setHeader('Content-Type', 'text/javascript');

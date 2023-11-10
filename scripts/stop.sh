@@ -5,7 +5,7 @@ cd ./von-network
 sleep 1
 cd ../
 sleep 0.1
-ps aux | grep -E "node|react" | awk '{print $1}' | xargs kill -9
 rm -R logs
 rm -R *_payloads
+ps aux | grep -E "node|react" | awk '{print $2}' | xargs kill -9
 echo DONE
