@@ -17,7 +17,7 @@
 
     <!-- Element to display API responses -->
     <div id="logContainer" class="log-container">
-        <h2>Chat Log:</h2>
+        <h2>Latest message:</h2>
         <p id="latestMessage"></p>
     </div>
 
@@ -33,23 +33,25 @@
         }
 
         async function fetchLatestMessage() {
-            try {
-                const fileContentsResponse = await fetch("http://localhost:3200/get-latest-message");
-                const fileText = await fileContentsResponse.text();
+    try {
+        const fileContentsResponse = await fetch("http://localhost:3200/get-latest-message");
+        const fileText = await fileContentsResponse.text();
 
-                if (fileText.trim() === "") {
-                    return null;
-                }
-
-                if (fileText.includes("verifier.agent received your message")) {
-                    return `Bob received your message`;
-                } else {
-                    return `${fileText}`;
-                }
-            } catch (error) {
-                return `Error fetching latest message: ${error.message}`;
+        if (fileText.trim() !== '') {
+            if (fileText.includes("verifier.agent received your message")) {
+                return `Bob received your message`;
+            } else {
+                return `${fileText}`;
             }
+        } else {
+            return null;
         }
+    } catch (error) {
+        console.error("Error fetching latest message:", error);
+        return null; // Return null in case of an error
+    }
+}
+
 
         async function logLatestMessage(message) {
             const latestMessageElement = document.getElementById("latestMessage");
