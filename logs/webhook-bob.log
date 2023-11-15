@@ -1,0 +1,4589 @@
+Server is running on http://localhost:1081
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:25.116774Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T14:51:25.116774Z',
+  state: 'invitation',
+  invitation_key: 'HfXmTskiHKvpTojxwBJ8rme4gjUhKvTNeA8wN9VZUMRu',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '1c6a2963-0eda-4d0a-96cd-8fd8aa328571'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:25.116774Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'EMU72o3Wb6hDksbGNTZUFv',
+  updated_at: '2023-11-15T14:51:25.182572Z',
+  state: 'request',
+  invitation_key: 'HfXmTskiHKvpTojxwBJ8rme4gjUhKvTNeA8wN9VZUMRu',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '08095811-6198-4c04-8d43-4e64eaf88bc8',
+  invitation_msg_id: '1c6a2963-0eda-4d0a-96cd-8fd8aa328571'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:25.116774Z',
+  their_role: 'inviter',
+  their_did: '2LyZpua4qhQCjS4FBi6gqC',
+  their_label: 'issuer.agent',
+  my_did: 'EMU72o3Wb6hDksbGNTZUFv',
+  updated_at: '2023-11-15T14:51:25.807407Z',
+  state: 'response',
+  invitation_key: 'HfXmTskiHKvpTojxwBJ8rme4gjUhKvTNeA8wN9VZUMRu',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '08095811-6198-4c04-8d43-4e64eaf88bc8',
+  invitation_msg_id: '1c6a2963-0eda-4d0a-96cd-8fd8aa328571'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:25.116774Z',
+  their_role: 'inviter',
+  their_did: '2LyZpua4qhQCjS4FBi6gqC',
+  their_label: 'issuer.agent',
+  my_did: 'EMU72o3Wb6hDksbGNTZUFv',
+  updated_at: '2023-11-15T14:51:25.964634Z',
+  state: 'active',
+  invitation_key: 'HfXmTskiHKvpTojxwBJ8rme4gjUhKvTNeA8wN9VZUMRu',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '08095811-6198-4c04-8d43-4e64eaf88bc8',
+  invitation_msg_id: '1c6a2963-0eda-4d0a-96cd-8fd8aa328571'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  message_id: '97d15609-7b92-413e-9a99-7f9cac4e3fc3',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:51:26.354715Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'c406149a-7b97-497c-9b99-eda9c6ff9a87',
+  message_id: '97d15609-7b92-413e-9a99-7f9cac4e3fc3',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:51:26.354715Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:35.167993Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T14:51:35.167993Z',
+  state: 'invitation',
+  invitation_key: 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:35.167993Z',
+  their_role: 'invitee',
+  their_did: 'VWe6N1gM8fxW9X6fwnFJCn',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T14:51:36.562823Z',
+  state: 'request',
+  invitation_key: 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:35.167993Z',
+  their_role: 'invitee',
+  their_did: 'VWe6N1gM8fxW9X6fwnFJCn',
+  their_label: 'issuer.agent',
+  my_did: 'EkkWrZDg9FjTeXor9dHtkM',
+  updated_at: '2023-11-15T14:51:36.624456Z',
+  state: 'response',
+  invitation_key: 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:51:35.167993Z',
+  their_role: 'invitee',
+  their_did: 'VWe6N1gM8fxW9X6fwnFJCn',
+  their_label: 'issuer.agent',
+  my_did: 'EkkWrZDg9FjTeXor9dHtkM',
+  updated_at: '2023-11-15T14:51:36.953665Z',
+  state: 'active',
+  invitation_key: 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  message_id: 'e0d497bf-f1d6-43e5-a303-887509993e02',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T14:51:37.527526Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  message_id: 'e0d497bf-f1d6-43e5-a303-887509993e02',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T14:51:37.527526Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:52:11.136474Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T14:52:11.136474Z',
+  state: 'invitation',
+  invitation_key: '9LvPfkiSLmYivuXHbJzGuGHpu8nzW48xW7mmTvhsD7M1',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '28d286cf-6f23-4e36-811c-459e1479d58a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:52:11.136474Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'H7tt4av8ghv96xUKrR7ga8',
+  updated_at: '2023-11-15T14:52:11.185406Z',
+  state: 'request',
+  invitation_key: '9LvPfkiSLmYivuXHbJzGuGHpu8nzW48xW7mmTvhsD7M1',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'b5c756f9-4f97-4e95-939f-a8dfebfdfece',
+  invitation_msg_id: '28d286cf-6f23-4e36-811c-459e1479d58a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:52:11.136474Z',
+  their_role: 'inviter',
+  their_did: 'CZa1agTrX2FHXNgx16t1gn',
+  their_label: 'issuer.agent',
+  my_did: 'H7tt4av8ghv96xUKrR7ga8',
+  updated_at: '2023-11-15T14:52:11.880030Z',
+  state: 'response',
+  invitation_key: '9LvPfkiSLmYivuXHbJzGuGHpu8nzW48xW7mmTvhsD7M1',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'b5c756f9-4f97-4e95-939f-a8dfebfdfece',
+  invitation_msg_id: '28d286cf-6f23-4e36-811c-459e1479d58a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:52:11.136474Z',
+  their_role: 'inviter',
+  their_did: 'CZa1agTrX2FHXNgx16t1gn',
+  their_label: 'issuer.agent',
+  my_did: 'H7tt4av8ghv96xUKrR7ga8',
+  updated_at: '2023-11-15T14:52:12.275540Z',
+  state: 'active',
+  invitation_key: '9LvPfkiSLmYivuXHbJzGuGHpu8nzW48xW7mmTvhsD7M1',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'b5c756f9-4f97-4e95-939f-a8dfebfdfece',
+  invitation_msg_id: '28d286cf-6f23-4e36-811c-459e1479d58a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  message_id: '17da26ef-9ff7-482b-81e4-f5f31aa14ba6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:52:13.240411Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '15262aae-ee31-495a-8776-ef0c18bf7fdb',
+  message_id: '17da26ef-9ff7-482b-81e4-f5f31aa14ba6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:52:13.240411Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:55:50.075797Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T14:55:50.075797Z',
+  state: 'invitation',
+  invitation_key: '2JsRZm1m6tv7hN3T4M4EYi19JQ5SKAKnuePj1YEq8i6t',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'bd2636ed-093b-4a67-97ac-989eb773b439'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:55:50.075797Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '2mbNbFypWDBAZQRxPTRDBG',
+  updated_at: '2023-11-15T14:55:50.212916Z',
+  state: 'request',
+  invitation_key: '2JsRZm1m6tv7hN3T4M4EYi19JQ5SKAKnuePj1YEq8i6t',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '2711b322-584b-40af-8493-8ea08880b5b4',
+  invitation_msg_id: 'bd2636ed-093b-4a67-97ac-989eb773b439'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:55:50.075797Z',
+  their_role: 'inviter',
+  their_did: 'Wit3yedQyP9vnTciQyE5Rg',
+  their_label: 'issuer.agent',
+  my_did: '2mbNbFypWDBAZQRxPTRDBG',
+  updated_at: '2023-11-15T14:55:50.926214Z',
+  state: 'response',
+  invitation_key: '2JsRZm1m6tv7hN3T4M4EYi19JQ5SKAKnuePj1YEq8i6t',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '2711b322-584b-40af-8493-8ea08880b5b4',
+  invitation_msg_id: 'bd2636ed-093b-4a67-97ac-989eb773b439'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:55:50.075797Z',
+  their_role: 'inviter',
+  their_did: 'Wit3yedQyP9vnTciQyE5Rg',
+  their_label: 'issuer.agent',
+  my_did: '2mbNbFypWDBAZQRxPTRDBG',
+  updated_at: '2023-11-15T14:55:51.167980Z',
+  state: 'active',
+  invitation_key: '2JsRZm1m6tv7hN3T4M4EYi19JQ5SKAKnuePj1YEq8i6t',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '2711b322-584b-40af-8493-8ea08880b5b4',
+  invitation_msg_id: 'bd2636ed-093b-4a67-97ac-989eb773b439'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  message_id: '240d7818-5495-4448-a123-b9963eda6c00',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:55:51.320170Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '22ceb658-0d78-4fbe-bc9e-58e834bb4517',
+  message_id: '240d7818-5495-4448-a123-b9963eda6c00',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:55:51.320170Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:57:43.631447Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T14:57:43.631447Z',
+  state: 'invitation',
+  invitation_key: '27WJ4dyYqyFTEuPCNkhU4qPpJ8xeBmDvj37tsbLAx7uz',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '8ed23c20-f1ea-4f5d-b553-62552f91296d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:57:43.631447Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '6m7Y7fusfvg8MTofH7PTFr',
+  updated_at: '2023-11-15T14:57:43.735548Z',
+  state: 'request',
+  invitation_key: '27WJ4dyYqyFTEuPCNkhU4qPpJ8xeBmDvj37tsbLAx7uz',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '488c5ad9-28c4-4bb4-93d7-b23b1f463dc7',
+  invitation_msg_id: '8ed23c20-f1ea-4f5d-b553-62552f91296d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:57:43.631447Z',
+  their_role: 'inviter',
+  their_did: '7y7g1REiDXzQnmUm6x4KmM',
+  their_label: 'issuer.agent',
+  my_did: '6m7Y7fusfvg8MTofH7PTFr',
+  updated_at: '2023-11-15T14:57:44.462500Z',
+  state: 'response',
+  invitation_key: '27WJ4dyYqyFTEuPCNkhU4qPpJ8xeBmDvj37tsbLAx7uz',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '488c5ad9-28c4-4bb4-93d7-b23b1f463dc7',
+  invitation_msg_id: '8ed23c20-f1ea-4f5d-b553-62552f91296d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T14:57:43.631447Z',
+  their_role: 'inviter',
+  their_did: '7y7g1REiDXzQnmUm6x4KmM',
+  their_label: 'issuer.agent',
+  my_did: '6m7Y7fusfvg8MTofH7PTFr',
+  updated_at: '2023-11-15T14:57:44.779931Z',
+  state: 'active',
+  invitation_key: '27WJ4dyYqyFTEuPCNkhU4qPpJ8xeBmDvj37tsbLAx7uz',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '488c5ad9-28c4-4bb4-93d7-b23b1f463dc7',
+  invitation_msg_id: '8ed23c20-f1ea-4f5d-b553-62552f91296d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  message_id: '9f31129f-8a26-4501-861e-5d8e01282b9b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:57:44.964379Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ae051483-c498-499e-a8f3-d1c51184b2ff',
+  message_id: '9f31129f-8a26-4501-861e-5d8e01282b9b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T14:57:44.964379Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:13.776323Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:03:13.776323Z',
+  state: 'invitation',
+  invitation_key: 'HNLNtZvGCBbkFz6sQoTuC5GGV1Q3oPajn1BE21V7vKh8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '561870e7-c626-411b-a56b-ca27db1fe4d0'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:13.776323Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'DCAjC6cHYwcVDMZCMF7xhh',
+  updated_at: '2023-11-15T15:03:13.953523Z',
+  state: 'request',
+  invitation_key: 'HNLNtZvGCBbkFz6sQoTuC5GGV1Q3oPajn1BE21V7vKh8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '1abaf5e0-ef95-4f02-ad58-cdee0068c89e',
+  invitation_msg_id: '561870e7-c626-411b-a56b-ca27db1fe4d0'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:13.776323Z',
+  their_role: 'inviter',
+  their_did: 'LvSGjoVMn5UMKFmpQ3qGXm',
+  their_label: 'issuer.agent',
+  my_did: 'DCAjC6cHYwcVDMZCMF7xhh',
+  updated_at: '2023-11-15T15:03:14.426001Z',
+  state: 'response',
+  invitation_key: 'HNLNtZvGCBbkFz6sQoTuC5GGV1Q3oPajn1BE21V7vKh8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '1abaf5e0-ef95-4f02-ad58-cdee0068c89e',
+  invitation_msg_id: '561870e7-c626-411b-a56b-ca27db1fe4d0'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:13.776323Z',
+  their_role: 'inviter',
+  their_did: 'LvSGjoVMn5UMKFmpQ3qGXm',
+  their_label: 'issuer.agent',
+  my_did: 'DCAjC6cHYwcVDMZCMF7xhh',
+  updated_at: '2023-11-15T15:03:14.686529Z',
+  state: 'active',
+  invitation_key: 'HNLNtZvGCBbkFz6sQoTuC5GGV1Q3oPajn1BE21V7vKh8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '1abaf5e0-ef95-4f02-ad58-cdee0068c89e',
+  invitation_msg_id: '561870e7-c626-411b-a56b-ca27db1fe4d0'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  message_id: 'e5e73b19-cf49-4246-88f2-a7b7ed304293',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:03:15.072504Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'e6702938-5d97-4d0a-bed3-77b37b94ccab',
+  message_id: 'e5e73b19-cf49-4246-88f2-a7b7ed304293',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:03:15.072504Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:23.602689Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T15:03:23.602689Z',
+  state: 'invitation',
+  invitation_key: '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:23.602689Z',
+  their_role: 'invitee',
+  their_did: '2FjWotZkJY5GuoxQoP2hUZ',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:03:25.115532Z',
+  state: 'request',
+  invitation_key: '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:23.602689Z',
+  their_role: 'invitee',
+  their_did: '2FjWotZkJY5GuoxQoP2hUZ',
+  their_label: 'issuer.agent',
+  my_did: '6EbcnhZYM6sRgWgqr4njnc',
+  updated_at: '2023-11-15T15:03:25.309890Z',
+  state: 'response',
+  invitation_key: '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:03:23.602689Z',
+  their_role: 'invitee',
+  their_did: '2FjWotZkJY5GuoxQoP2hUZ',
+  their_label: 'issuer.agent',
+  my_did: '6EbcnhZYM6sRgWgqr4njnc',
+  updated_at: '2023-11-15T15:03:25.816071Z',
+  state: 'active',
+  invitation_key: '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  message_id: 'b333546a-d004-4a03-b469-ff6f2614a577',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:03:26.332910Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  message_id: 'b333546a-d004-4a03-b469-ff6f2614a577',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:03:26.332910Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:04:56.882213Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:04:56.882213Z',
+  state: 'invitation',
+  invitation_key: '5zBPaNMg7ppokNAJwLKEJoGiLzvNgvo25DXGJoWioTPX',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '47418dc1-778c-4118-85b9-9430c6386f77'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:04:56.882213Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '9zf46RwaubRSrKLaiLgZN6',
+  updated_at: '2023-11-15T15:04:57.074549Z',
+  state: 'request',
+  invitation_key: '5zBPaNMg7ppokNAJwLKEJoGiLzvNgvo25DXGJoWioTPX',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '8ee5ff6e-9c5d-4989-96da-e4c3c39ea01e',
+  invitation_msg_id: '47418dc1-778c-4118-85b9-9430c6386f77'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:04:56.882213Z',
+  their_role: 'inviter',
+  their_did: 'RkAiRjRFPWXogfKRp2CwGG',
+  their_label: 'issuer.agent',
+  my_did: '9zf46RwaubRSrKLaiLgZN6',
+  updated_at: '2023-11-15T15:04:57.756811Z',
+  state: 'response',
+  invitation_key: '5zBPaNMg7ppokNAJwLKEJoGiLzvNgvo25DXGJoWioTPX',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '8ee5ff6e-9c5d-4989-96da-e4c3c39ea01e',
+  invitation_msg_id: '47418dc1-778c-4118-85b9-9430c6386f77'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:04:56.882213Z',
+  their_role: 'inviter',
+  their_did: 'RkAiRjRFPWXogfKRp2CwGG',
+  their_label: 'issuer.agent',
+  my_did: '9zf46RwaubRSrKLaiLgZN6',
+  updated_at: '2023-11-15T15:04:58.115510Z',
+  state: 'active',
+  invitation_key: '5zBPaNMg7ppokNAJwLKEJoGiLzvNgvo25DXGJoWioTPX',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '8ee5ff6e-9c5d-4989-96da-e4c3c39ea01e',
+  invitation_msg_id: '47418dc1-778c-4118-85b9-9430c6386f77'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  message_id: '87c7b154-ed02-434b-984d-8867c448b7b6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:04:58.248052Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '7ad705db-2daf-494b-9840-4ca2c4a8cb56',
+  message_id: '87c7b154-ed02-434b-984d-8867c448b7b6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:04:58.248052Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:06:55.665337Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:06:55.665337Z',
+  state: 'invitation',
+  invitation_key: '7EUPW6j4VPmUhiT93XQM6G3DyxXxDwZThYyEDLV5TSWZ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'a90f20ea-2389-47a1-8c12-94b9f871aaf6'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:06:55.665337Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'Ej3gGmJbrSjwcFcoAoZwhc',
+  updated_at: '2023-11-15T15:06:55.812843Z',
+  state: 'request',
+  invitation_key: '7EUPW6j4VPmUhiT93XQM6G3DyxXxDwZThYyEDLV5TSWZ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'a49c160f-28f4-49b1-a2da-4c160b722931',
+  invitation_msg_id: 'a90f20ea-2389-47a1-8c12-94b9f871aaf6'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:06:55.665337Z',
+  their_role: 'inviter',
+  their_did: 'Uq1e81mdKF2nyTwvdn45Dp',
+  their_label: 'issuer.agent',
+  my_did: 'Ej3gGmJbrSjwcFcoAoZwhc',
+  updated_at: '2023-11-15T15:06:56.464950Z',
+  state: 'response',
+  invitation_key: '7EUPW6j4VPmUhiT93XQM6G3DyxXxDwZThYyEDLV5TSWZ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'a49c160f-28f4-49b1-a2da-4c160b722931',
+  invitation_msg_id: 'a90f20ea-2389-47a1-8c12-94b9f871aaf6'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:06:55.665337Z',
+  their_role: 'inviter',
+  their_did: 'Uq1e81mdKF2nyTwvdn45Dp',
+  their_label: 'issuer.agent',
+  my_did: 'Ej3gGmJbrSjwcFcoAoZwhc',
+  updated_at: '2023-11-15T15:06:56.656567Z',
+  state: 'active',
+  invitation_key: '7EUPW6j4VPmUhiT93XQM6G3DyxXxDwZThYyEDLV5TSWZ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'a49c160f-28f4-49b1-a2da-4c160b722931',
+  invitation_msg_id: 'a90f20ea-2389-47a1-8c12-94b9f871aaf6'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  message_id: 'd1114f58-1711-4f0a-abd1-f4cb8ccf2bed',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:06:56.984247Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ede18a38-bdbd-4c23-8908-83218e88ae37',
+  message_id: 'd1114f58-1711-4f0a-abd1-f4cb8ccf2bed',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:06:56.984247Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:07:24.643921Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:07:24.643921Z',
+  state: 'invitation',
+  invitation_key: 'HooNMoepsbRF16a3pJywFmaUmnj37CEissHLGZBB4yCS',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '3aa215a1-5b0a-4cae-968a-f99241d83931'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:07:24.643921Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '71djHizHtwT4D6PvTDjMok',
+  updated_at: '2023-11-15T15:07:24.752086Z',
+  state: 'request',
+  invitation_key: 'HooNMoepsbRF16a3pJywFmaUmnj37CEissHLGZBB4yCS',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '11dae6a0-50bf-42a4-b62e-f29a0558106f',
+  invitation_msg_id: '3aa215a1-5b0a-4cae-968a-f99241d83931'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:07:24.643921Z',
+  their_role: 'inviter',
+  their_did: 'WqGbMGCG4uuAwCdDVUHw9o',
+  their_label: 'issuer.agent',
+  my_did: '71djHizHtwT4D6PvTDjMok',
+  updated_at: '2023-11-15T15:07:25.445488Z',
+  state: 'response',
+  invitation_key: 'HooNMoepsbRF16a3pJywFmaUmnj37CEissHLGZBB4yCS',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '11dae6a0-50bf-42a4-b62e-f29a0558106f',
+  invitation_msg_id: '3aa215a1-5b0a-4cae-968a-f99241d83931'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:07:24.643921Z',
+  their_role: 'inviter',
+  their_did: 'WqGbMGCG4uuAwCdDVUHw9o',
+  their_label: 'issuer.agent',
+  my_did: '71djHizHtwT4D6PvTDjMok',
+  updated_at: '2023-11-15T15:07:25.746965Z',
+  state: 'active',
+  invitation_key: 'HooNMoepsbRF16a3pJywFmaUmnj37CEissHLGZBB4yCS',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '11dae6a0-50bf-42a4-b62e-f29a0558106f',
+  invitation_msg_id: '3aa215a1-5b0a-4cae-968a-f99241d83931'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  message_id: '77e16b16-f543-421a-a6e2-0343fc9ce470',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:07:25.856790Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '6465525a-1cd5-40ba-98b0-bd144fa7c312',
+  message_id: '77e16b16-f543-421a-a6e2-0343fc9ce470',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:07:25.856790Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:09:17.014516Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:09:17.014516Z',
+  state: 'invitation',
+  invitation_key: '9B1v3QDJkbjni3GtZmhfxsvueTPEHxZ9BFTj38H7GjmR',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'e011db69-709a-4321-8314-78abc03d012c'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:09:17.014516Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'ESKnr6nw1P5owgT8Y9vP2K',
+  updated_at: '2023-11-15T15:09:17.277674Z',
+  state: 'request',
+  invitation_key: '9B1v3QDJkbjni3GtZmhfxsvueTPEHxZ9BFTj38H7GjmR',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '7af3af2e-a3fe-40b1-ad06-56b335dc3bb2',
+  invitation_msg_id: 'e011db69-709a-4321-8314-78abc03d012c'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:09:17.014516Z',
+  their_role: 'inviter',
+  their_did: '5hY2RHncdCbN41dxGRNhpQ',
+  their_label: 'issuer.agent',
+  my_did: 'ESKnr6nw1P5owgT8Y9vP2K',
+  updated_at: '2023-11-15T15:09:18.822483Z',
+  state: 'response',
+  invitation_key: '9B1v3QDJkbjni3GtZmhfxsvueTPEHxZ9BFTj38H7GjmR',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '7af3af2e-a3fe-40b1-ad06-56b335dc3bb2',
+  invitation_msg_id: 'e011db69-709a-4321-8314-78abc03d012c'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:09:17.014516Z',
+  their_role: 'inviter',
+  their_did: '5hY2RHncdCbN41dxGRNhpQ',
+  their_label: 'issuer.agent',
+  my_did: 'ESKnr6nw1P5owgT8Y9vP2K',
+  updated_at: '2023-11-15T15:09:18.953824Z',
+  state: 'active',
+  invitation_key: '9B1v3QDJkbjni3GtZmhfxsvueTPEHxZ9BFTj38H7GjmR',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '7af3af2e-a3fe-40b1-ad06-56b335dc3bb2',
+  invitation_msg_id: 'e011db69-709a-4321-8314-78abc03d012c'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  message_id: '681474d7-208e-4ea1-8012-46ebf79d0a27',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:09:19.508259Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '2a74cd68-9dbb-438a-9998-56d5d289b8c4',
+  message_id: '681474d7-208e-4ea1-8012-46ebf79d0a27',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:09:19.508259Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:10:12.432037Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:10:12.432037Z',
+  state: 'invitation',
+  invitation_key: 'FbSfgAWjfrySAEWZDaqm7GVgmtUqZqfz1dkKHAgBZXR6',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'ded9507a-0d16-4f4a-bee2-2778653b997d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:10:12.432037Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'A3Z5G6VLKSG6cdYDwZ7Zem',
+  updated_at: '2023-11-15T15:10:12.602257Z',
+  state: 'request',
+  invitation_key: 'FbSfgAWjfrySAEWZDaqm7GVgmtUqZqfz1dkKHAgBZXR6',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'da83dbed-47ff-40be-aa58-7a4a800745ac',
+  invitation_msg_id: 'ded9507a-0d16-4f4a-bee2-2778653b997d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:10:12.432037Z',
+  their_role: 'inviter',
+  their_did: 'FB6hYCF8WSXTzGpEVsfTVm',
+  their_label: 'issuer.agent',
+  my_did: 'A3Z5G6VLKSG6cdYDwZ7Zem',
+  updated_at: '2023-11-15T15:10:13.259922Z',
+  state: 'response',
+  invitation_key: 'FbSfgAWjfrySAEWZDaqm7GVgmtUqZqfz1dkKHAgBZXR6',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'da83dbed-47ff-40be-aa58-7a4a800745ac',
+  invitation_msg_id: 'ded9507a-0d16-4f4a-bee2-2778653b997d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:10:12.432037Z',
+  their_role: 'inviter',
+  their_did: 'FB6hYCF8WSXTzGpEVsfTVm',
+  their_label: 'issuer.agent',
+  my_did: 'A3Z5G6VLKSG6cdYDwZ7Zem',
+  updated_at: '2023-11-15T15:10:13.621396Z',
+  state: 'active',
+  invitation_key: 'FbSfgAWjfrySAEWZDaqm7GVgmtUqZqfz1dkKHAgBZXR6',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'da83dbed-47ff-40be-aa58-7a4a800745ac',
+  invitation_msg_id: 'ded9507a-0d16-4f4a-bee2-2778653b997d'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  message_id: '86ffabda-c17b-48da-af84-5e9697631db7',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:10:13.760080Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ebca093f-3f6b-45eb-804a-b780d86e3dfd',
+  message_id: '86ffabda-c17b-48da-af84-5e9697631db7',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:10:13.760080Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:27:48.928681Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:27:48.928681Z',
+  state: 'invitation',
+  invitation_key: '6LrVfbfrAqM34xcbEWQH6JkvkvjAKzEqzTUT2qSaJYJC',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '31fe8b16-2c91-45e4-8ea7-88580f8d502a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:27:48.928681Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'M78xzE7PjGEjBkAsYBTgHC',
+  updated_at: '2023-11-15T15:27:49.019861Z',
+  state: 'request',
+  invitation_key: '6LrVfbfrAqM34xcbEWQH6JkvkvjAKzEqzTUT2qSaJYJC',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'ec1e1680-300b-4533-b9b5-189d34404821',
+  invitation_msg_id: '31fe8b16-2c91-45e4-8ea7-88580f8d502a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:27:48.928681Z',
+  their_role: 'inviter',
+  their_did: '6tb2HTZZ5e5UAWG6nkqfbG',
+  their_label: 'issuer.agent',
+  my_did: 'M78xzE7PjGEjBkAsYBTgHC',
+  updated_at: '2023-11-15T15:27:49.755286Z',
+  state: 'response',
+  invitation_key: '6LrVfbfrAqM34xcbEWQH6JkvkvjAKzEqzTUT2qSaJYJC',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'ec1e1680-300b-4533-b9b5-189d34404821',
+  invitation_msg_id: '31fe8b16-2c91-45e4-8ea7-88580f8d502a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:27:48.928681Z',
+  their_role: 'inviter',
+  their_did: '6tb2HTZZ5e5UAWG6nkqfbG',
+  their_label: 'issuer.agent',
+  my_did: 'M78xzE7PjGEjBkAsYBTgHC',
+  updated_at: '2023-11-15T15:27:50.004218Z',
+  state: 'active',
+  invitation_key: '6LrVfbfrAqM34xcbEWQH6JkvkvjAKzEqzTUT2qSaJYJC',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'ec1e1680-300b-4533-b9b5-189d34404821',
+  invitation_msg_id: '31fe8b16-2c91-45e4-8ea7-88580f8d502a'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  message_id: '41478206-cb0c-4c5a-a287-165dcc7f6109',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:27:50.213898Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'cc4e5322-fe81-45ab-b797-0043825580a2',
+  message_id: '41478206-cb0c-4c5a-a287-165dcc7f6109',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:27:50.213898Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:29:56.151906Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:29:56.151906Z',
+  state: 'invitation',
+  invitation_key: '5tZ3uhXe3668WAsLmjoYbRWbVSgx5tXB76FdMSjGUUEJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '6bbcbeac-d5bd-4bda-bb23-0b1a4bc07cbe'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:29:56.151906Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'QubuvgWQRg8y47UvM2C713',
+  updated_at: '2023-11-15T15:29:56.349530Z',
+  state: 'request',
+  invitation_key: '5tZ3uhXe3668WAsLmjoYbRWbVSgx5tXB76FdMSjGUUEJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'a0395599-a522-4a9f-b1a3-6b5c1ef21ce3',
+  invitation_msg_id: '6bbcbeac-d5bd-4bda-bb23-0b1a4bc07cbe'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:29:56.151906Z',
+  their_role: 'inviter',
+  their_did: 'EJhHp9iqTMsYgU9nZNFrZQ',
+  their_label: 'issuer.agent',
+  my_did: 'QubuvgWQRg8y47UvM2C713',
+  updated_at: '2023-11-15T15:29:57.338688Z',
+  state: 'response',
+  invitation_key: '5tZ3uhXe3668WAsLmjoYbRWbVSgx5tXB76FdMSjGUUEJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'a0395599-a522-4a9f-b1a3-6b5c1ef21ce3',
+  invitation_msg_id: '6bbcbeac-d5bd-4bda-bb23-0b1a4bc07cbe'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:29:56.151906Z',
+  their_role: 'inviter',
+  their_did: 'EJhHp9iqTMsYgU9nZNFrZQ',
+  their_label: 'issuer.agent',
+  my_did: 'QubuvgWQRg8y47UvM2C713',
+  updated_at: '2023-11-15T15:29:57.658518Z',
+  state: 'active',
+  invitation_key: '5tZ3uhXe3668WAsLmjoYbRWbVSgx5tXB76FdMSjGUUEJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'a0395599-a522-4a9f-b1a3-6b5c1ef21ce3',
+  invitation_msg_id: '6bbcbeac-d5bd-4bda-bb23-0b1a4bc07cbe'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  message_id: '27bc3f5f-2698-4bfb-b86d-987618b8dbb5',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:29:57.485879Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'e433c6f9-7a3f-4841-8401-4ceb1e10e133',
+  message_id: '27bc3f5f-2698-4bfb-b86d-987618b8dbb5',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:29:57.485879Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:31:15.278258Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:31:15.278258Z',
+  state: 'invitation',
+  invitation_key: '2cpFweW2VT8FVk7zL8wzR2TzN1NWk8xscuH87iEyjRoY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '6c07687b-2606-46d1-86c2-30de8fb30263'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:31:15.278258Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'L75UtYdENSQCMRwsa6S7my',
+  updated_at: '2023-11-15T15:31:15.431485Z',
+  state: 'request',
+  invitation_key: '2cpFweW2VT8FVk7zL8wzR2TzN1NWk8xscuH87iEyjRoY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'ddd839ad-cf6e-4ee1-b309-92c171e20843',
+  invitation_msg_id: '6c07687b-2606-46d1-86c2-30de8fb30263'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:31:15.278258Z',
+  their_role: 'inviter',
+  their_did: '44jFN6TguFAAwh5xwkJKDq',
+  their_label: 'issuer.agent',
+  my_did: 'L75UtYdENSQCMRwsa6S7my',
+  updated_at: '2023-11-15T15:31:16.165927Z',
+  state: 'response',
+  invitation_key: '2cpFweW2VT8FVk7zL8wzR2TzN1NWk8xscuH87iEyjRoY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'ddd839ad-cf6e-4ee1-b309-92c171e20843',
+  invitation_msg_id: '6c07687b-2606-46d1-86c2-30de8fb30263'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:31:15.278258Z',
+  their_role: 'inviter',
+  their_did: '44jFN6TguFAAwh5xwkJKDq',
+  their_label: 'issuer.agent',
+  my_did: 'L75UtYdENSQCMRwsa6S7my',
+  updated_at: '2023-11-15T15:31:16.372113Z',
+  state: 'active',
+  invitation_key: '2cpFweW2VT8FVk7zL8wzR2TzN1NWk8xscuH87iEyjRoY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'ddd839ad-cf6e-4ee1-b309-92c171e20843',
+  invitation_msg_id: '6c07687b-2606-46d1-86c2-30de8fb30263'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  message_id: '17b6adfe-832e-4633-b301-724039e773fd',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:31:16.601668Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'db6d53bc-c6cc-43ea-bec2-2fb2df145786',
+  message_id: '17b6adfe-832e-4633-b301-724039e773fd',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:31:16.601668Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:36:55.372526Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:36:55.372526Z',
+  state: 'invitation',
+  invitation_key: '95SrBeARKC6GQLTi1FpUivD4mab6rjbeZKdZaNYNtTNx',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '4b4b29cd-ffea-4b30-8013-b2cf20694a38'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:36:55.372526Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'Ha1JKxientjk4nN2Ga93CW',
+  updated_at: '2023-11-15T15:36:55.572989Z',
+  state: 'request',
+  invitation_key: '95SrBeARKC6GQLTi1FpUivD4mab6rjbeZKdZaNYNtTNx',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '55ed5f68-d440-4c8b-b4cf-d7dbff2baa4c',
+  invitation_msg_id: '4b4b29cd-ffea-4b30-8013-b2cf20694a38'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:36:55.372526Z',
+  their_role: 'inviter',
+  their_did: 'Jm3RGkmfPCxPRAZm2hPSg8',
+  their_label: 'issuer.agent',
+  my_did: 'Ha1JKxientjk4nN2Ga93CW',
+  updated_at: '2023-11-15T15:36:56.638407Z',
+  state: 'response',
+  invitation_key: '95SrBeARKC6GQLTi1FpUivD4mab6rjbeZKdZaNYNtTNx',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '55ed5f68-d440-4c8b-b4cf-d7dbff2baa4c',
+  invitation_msg_id: '4b4b29cd-ffea-4b30-8013-b2cf20694a38'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:36:55.372526Z',
+  their_role: 'inviter',
+  their_did: 'Jm3RGkmfPCxPRAZm2hPSg8',
+  their_label: 'issuer.agent',
+  my_did: 'Ha1JKxientjk4nN2Ga93CW',
+  updated_at: '2023-11-15T15:36:56.830358Z',
+  state: 'active',
+  invitation_key: '95SrBeARKC6GQLTi1FpUivD4mab6rjbeZKdZaNYNtTNx',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '55ed5f68-d440-4c8b-b4cf-d7dbff2baa4c',
+  invitation_msg_id: '4b4b29cd-ffea-4b30-8013-b2cf20694a38'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '216'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  message_id: '9f778b52-8af3-4123-b1e9-5279535c99da',
+  content: '[object HTMLInputElement]',
+  state: 'received',
+  sent_time: '2023-11-15T15:36:56.932636Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '3a3d2707-905d-4d49-92a3-68d885975be4',
+  message_id: '9f778b52-8af3-4123-b1e9-5279535c99da',
+  content: '[object HTMLInputElement]',
+  state: 'received',
+  sent_time: '2023-11-15T15:36:56.932636Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:38:28.593123Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:38:28.593123Z',
+  state: 'invitation',
+  invitation_key: '6SHxwsBAKRpGvit9PVcxsoVAsVJYYYAfhcv3dm6GvUU8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '66117d28-b4ac-4eea-8773-1158af7a3498'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:38:28.593123Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '53enGAnUSgeuvLQLJu42wR',
+  updated_at: '2023-11-15T15:38:28.822337Z',
+  state: 'request',
+  invitation_key: '6SHxwsBAKRpGvit9PVcxsoVAsVJYYYAfhcv3dm6GvUU8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '773649a4-8fc7-479c-9c25-4c56ae0228ab',
+  invitation_msg_id: '66117d28-b4ac-4eea-8773-1158af7a3498'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:38:28.593123Z',
+  their_role: 'inviter',
+  their_did: 'Y2bC7qrN92cx8tbiakMxVi',
+  their_label: 'issuer.agent',
+  my_did: '53enGAnUSgeuvLQLJu42wR',
+  updated_at: '2023-11-15T15:38:29.643092Z',
+  state: 'response',
+  invitation_key: '6SHxwsBAKRpGvit9PVcxsoVAsVJYYYAfhcv3dm6GvUU8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '773649a4-8fc7-479c-9c25-4c56ae0228ab',
+  invitation_msg_id: '66117d28-b4ac-4eea-8773-1158af7a3498'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:38:28.593123Z',
+  their_role: 'inviter',
+  their_did: 'Y2bC7qrN92cx8tbiakMxVi',
+  their_label: 'issuer.agent',
+  my_did: '53enGAnUSgeuvLQLJu42wR',
+  updated_at: '2023-11-15T15:38:29.980706Z',
+  state: 'active',
+  invitation_key: '6SHxwsBAKRpGvit9PVcxsoVAsVJYYYAfhcv3dm6GvUU8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '773649a4-8fc7-479c-9c25-4c56ae0228ab',
+  invitation_msg_id: '66117d28-b4ac-4eea-8773-1158af7a3498'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  message_id: '2d766543-92b6-41a2-bc19-2a80764e62f6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:38:30.101589Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ca83eee0-9fcd-46cf-9475-3436aed8587d',
+  message_id: '2d766543-92b6-41a2-bc19-2a80764e62f6',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:38:30.101589Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:40:35.381580Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:40:35.381580Z',
+  state: 'invitation',
+  invitation_key: '8W3be9iocJzpSUxYGf3vjnUQhRXTxHRStAVVBopdJWx8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '3907bd91-d7d6-4635-b907-465beec13aed'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:40:35.381580Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'GHAnFwGETnjFuzAiamcajv',
+  updated_at: '2023-11-15T15:40:35.606082Z',
+  state: 'request',
+  invitation_key: '8W3be9iocJzpSUxYGf3vjnUQhRXTxHRStAVVBopdJWx8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: 'f476ee1d-e7d2-4372-a0fb-e5592d7a238e',
+  invitation_msg_id: '3907bd91-d7d6-4635-b907-465beec13aed'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:40:35.381580Z',
+  their_role: 'inviter',
+  their_did: 'Au8YP3M5WGJmh6SViutkyE',
+  their_label: 'issuer.agent',
+  my_did: 'GHAnFwGETnjFuzAiamcajv',
+  updated_at: '2023-11-15T15:40:36.077601Z',
+  state: 'response',
+  invitation_key: '8W3be9iocJzpSUxYGf3vjnUQhRXTxHRStAVVBopdJWx8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: 'f476ee1d-e7d2-4372-a0fb-e5592d7a238e',
+  invitation_msg_id: '3907bd91-d7d6-4635-b907-465beec13aed'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:40:35.381580Z',
+  their_role: 'inviter',
+  their_did: 'Au8YP3M5WGJmh6SViutkyE',
+  their_label: 'issuer.agent',
+  my_did: 'GHAnFwGETnjFuzAiamcajv',
+  updated_at: '2023-11-15T15:40:36.437362Z',
+  state: 'active',
+  invitation_key: '8W3be9iocJzpSUxYGf3vjnUQhRXTxHRStAVVBopdJWx8',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: 'f476ee1d-e7d2-4372-a0fb-e5592d7a238e',
+  invitation_msg_id: '3907bd91-d7d6-4635-b907-465beec13aed'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  message_id: '9b5cda78-d7b4-48ee-bcd5-0629ae6e0729',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:40:36.709244Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'fa4fe8b6-d30f-48a5-9faf-2ee7486d1f54',
+  message_id: '9b5cda78-d7b4-48ee-bcd5-0629ae6e0729',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:40:36.709244Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:02.748350Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:45:02.748350Z',
+  state: 'invitation',
+  invitation_key: '5XFHtJ5q27UiJagsj9f2rjTV8rsuBhpxu7opiaz3g5mH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '253796dc-30ed-4ffd-a161-8fe6a5d567dd'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:02.748350Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '2vSGiBy4ywXeFqnXSxhWL5',
+  updated_at: '2023-11-15T15:45:02.873072Z',
+  state: 'request',
+  invitation_key: '5XFHtJ5q27UiJagsj9f2rjTV8rsuBhpxu7opiaz3g5mH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '5973a03f-32de-4155-99bd-628950929495',
+  invitation_msg_id: '253796dc-30ed-4ffd-a161-8fe6a5d567dd'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:02.748350Z',
+  their_role: 'inviter',
+  their_did: 'QKmYXgcnTazAg2RkFeZoWt',
+  their_label: 'issuer.agent',
+  my_did: '2vSGiBy4ywXeFqnXSxhWL5',
+  updated_at: '2023-11-15T15:45:03.535880Z',
+  state: 'response',
+  invitation_key: '5XFHtJ5q27UiJagsj9f2rjTV8rsuBhpxu7opiaz3g5mH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '5973a03f-32de-4155-99bd-628950929495',
+  invitation_msg_id: '253796dc-30ed-4ffd-a161-8fe6a5d567dd'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:02.748350Z',
+  their_role: 'inviter',
+  their_did: 'QKmYXgcnTazAg2RkFeZoWt',
+  their_label: 'issuer.agent',
+  my_did: '2vSGiBy4ywXeFqnXSxhWL5',
+  updated_at: '2023-11-15T15:45:03.907951Z',
+  state: 'active',
+  invitation_key: '5XFHtJ5q27UiJagsj9f2rjTV8rsuBhpxu7opiaz3g5mH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '5973a03f-32de-4155-99bd-628950929495',
+  invitation_msg_id: '253796dc-30ed-4ffd-a161-8fe6a5d567dd'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  message_id: '1b3d8697-24b4-40be-bcc5-10115ed0be75',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:45:04.144735Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '87e7c491-93ae-41dd-9c56-2db75147821c',
+  message_id: '1b3d8697-24b4-40be-bcc5-10115ed0be75',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:45:04.144735Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:17.882075Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T15:45:17.882075Z',
+  state: 'invitation',
+  invitation_key: '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:17.882075Z',
+  their_role: 'invitee',
+  their_did: '6Ha6YcGsT2SE8gJBrAZZ2B',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:45:19.330837Z',
+  state: 'request',
+  invitation_key: '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:17.882075Z',
+  their_role: 'invitee',
+  their_did: '6Ha6YcGsT2SE8gJBrAZZ2B',
+  their_label: 'issuer.agent',
+  my_did: 'TiWbgURqGoXoB6yFV1WwiM',
+  updated_at: '2023-11-15T15:45:19.498104Z',
+  state: 'response',
+  invitation_key: '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:45:17.882075Z',
+  their_role: 'invitee',
+  their_did: '6Ha6YcGsT2SE8gJBrAZZ2B',
+  their_label: 'issuer.agent',
+  my_did: 'TiWbgURqGoXoB6yFV1WwiM',
+  updated_at: '2023-11-15T15:45:20.005972Z',
+  state: 'active',
+  invitation_key: '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  message_id: '36c00b4d-07f8-4ff4-901d-4350dd10c334',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:45:20.303228Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  message_id: '36c00b4d-07f8-4ff4-901d-4350dd10c334',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:45:20.303228Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:51:55.020640Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:51:55.020640Z',
+  state: 'invitation',
+  invitation_key: 'DSUg5x8HTeVBgnbWZ4dd7F7Xd3R3fqE5R3hx8wwSFkDY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'f065631b-1642-44fe-bfe4-c6f6f3e92964'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:51:55.020640Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'EiLdqQvKkQrRSyAnCPhtHj',
+  updated_at: '2023-11-15T15:51:55.144673Z',
+  state: 'request',
+  invitation_key: 'DSUg5x8HTeVBgnbWZ4dd7F7Xd3R3fqE5R3hx8wwSFkDY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '51929899-6d73-49d8-9f4b-585acfc92075',
+  invitation_msg_id: 'f065631b-1642-44fe-bfe4-c6f6f3e92964'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:51:55.020640Z',
+  their_role: 'inviter',
+  their_did: '4CZK9JWhCe5n9cMFeaCPZe',
+  their_label: 'issuer.agent',
+  my_did: 'EiLdqQvKkQrRSyAnCPhtHj',
+  updated_at: '2023-11-15T15:51:55.917965Z',
+  state: 'response',
+  invitation_key: 'DSUg5x8HTeVBgnbWZ4dd7F7Xd3R3fqE5R3hx8wwSFkDY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '51929899-6d73-49d8-9f4b-585acfc92075',
+  invitation_msg_id: 'f065631b-1642-44fe-bfe4-c6f6f3e92964'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:51:55.020640Z',
+  their_role: 'inviter',
+  their_did: '4CZK9JWhCe5n9cMFeaCPZe',
+  their_label: 'issuer.agent',
+  my_did: 'EiLdqQvKkQrRSyAnCPhtHj',
+  updated_at: '2023-11-15T15:51:56.190805Z',
+  state: 'active',
+  invitation_key: 'DSUg5x8HTeVBgnbWZ4dd7F7Xd3R3fqE5R3hx8wwSFkDY',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '51929899-6d73-49d8-9f4b-585acfc92075',
+  invitation_msg_id: 'f065631b-1642-44fe-bfe4-c6f6f3e92964'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  message_id: '81c0ab37-e971-4111-a304-0d37627bd0f0',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:51:56.391495Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '258b079f-c293-4f46-ada3-aeaef21cb1a2',
+  message_id: '81c0ab37-e971-4111-a304-0d37627bd0f0',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:51:56.391495Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:52:02.720912Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T15:52:02.720912Z',
+  state: 'invitation',
+  invitation_key: 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:52:02.720912Z',
+  their_role: 'invitee',
+  their_did: 'HLwvcLC8W5sLrtGuFWipdw',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:52:04.225888Z',
+  state: 'request',
+  invitation_key: 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:52:02.720912Z',
+  their_role: 'invitee',
+  their_did: 'HLwvcLC8W5sLrtGuFWipdw',
+  their_label: 'issuer.agent',
+  my_did: 'Eka9ijvM8VoY64xA43vDMn',
+  updated_at: '2023-11-15T15:52:04.275805Z',
+  state: 'response',
+  invitation_key: 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:52:02.720912Z',
+  their_role: 'invitee',
+  their_did: 'HLwvcLC8W5sLrtGuFWipdw',
+  their_label: 'issuer.agent',
+  my_did: 'Eka9ijvM8VoY64xA43vDMn',
+  updated_at: '2023-11-15T15:52:04.941561Z',
+  state: 'active',
+  invitation_key: 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  message_id: 'ed8bd4be-6f03-4071-b34b-86c456f6ac4b',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:52:05.064320Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  message_id: 'ed8bd4be-6f03-4071-b34b-86c456f6ac4b',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:52:05.064320Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:25.232424Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:57:25.232424Z',
+  state: 'invitation',
+  invitation_key: '8cFDWpqGvab8nK87mZZZsxUpmL65Y3KbUD2W8BboHHFT',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '7f89a10c-bb36-425a-a576-da3747a4f398'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:25.232424Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '2VuZVgRrKgNejgfV21Dt2G',
+  updated_at: '2023-11-15T15:57:25.289705Z',
+  state: 'request',
+  invitation_key: '8cFDWpqGvab8nK87mZZZsxUpmL65Y3KbUD2W8BboHHFT',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '3a0d1a24-b054-4446-8820-b2469bb94320',
+  invitation_msg_id: '7f89a10c-bb36-425a-a576-da3747a4f398'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:25.232424Z',
+  their_role: 'inviter',
+  their_did: '12G9nuVWJd5beihmZCZZHq',
+  their_label: 'issuer.agent',
+  my_did: '2VuZVgRrKgNejgfV21Dt2G',
+  updated_at: '2023-11-15T15:57:25.736940Z',
+  state: 'response',
+  invitation_key: '8cFDWpqGvab8nK87mZZZsxUpmL65Y3KbUD2W8BboHHFT',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '3a0d1a24-b054-4446-8820-b2469bb94320',
+  invitation_msg_id: '7f89a10c-bb36-425a-a576-da3747a4f398'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:25.232424Z',
+  their_role: 'inviter',
+  their_did: '12G9nuVWJd5beihmZCZZHq',
+  their_label: 'issuer.agent',
+  my_did: '2VuZVgRrKgNejgfV21Dt2G',
+  updated_at: '2023-11-15T15:57:25.983555Z',
+  state: 'active',
+  invitation_key: '8cFDWpqGvab8nK87mZZZsxUpmL65Y3KbUD2W8BboHHFT',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '3a0d1a24-b054-4446-8820-b2469bb94320',
+  invitation_msg_id: '7f89a10c-bb36-425a-a576-da3747a4f398'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  message_id: 'd2f36eba-c52f-4ff6-8437-8eab2973a98b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:57:26.405768Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '2445296a-dba7-4407-84e6-459330f58e02',
+  message_id: 'd2f36eba-c52f-4ff6-8437-8eab2973a98b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T15:57:26.405768Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:32.380675Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T15:57:32.380675Z',
+  state: 'invitation',
+  invitation_key: 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:32.380675Z',
+  their_role: 'invitee',
+  their_did: '2ce2ni5KF3ty8XixvSd4w9',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:57:33.742080Z',
+  state: 'request',
+  invitation_key: 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:32.380675Z',
+  their_role: 'invitee',
+  their_did: '2ce2ni5KF3ty8XixvSd4w9',
+  their_label: 'issuer.agent',
+  my_did: 'RRopBKsa1s48V3bJSEs5aj',
+  updated_at: '2023-11-15T15:57:33.835247Z',
+  state: 'response',
+  invitation_key: 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:57:32.380675Z',
+  their_role: 'invitee',
+  their_did: '2ce2ni5KF3ty8XixvSd4w9',
+  their_label: 'issuer.agent',
+  my_did: 'RRopBKsa1s48V3bJSEs5aj',
+  updated_at: '2023-11-15T15:57:34.156287Z',
+  state: 'active',
+  invitation_key: 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  message_id: 'ba37fe27-0183-4693-a798-f9efe1cef6b3',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:57:34.746026Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  message_id: 'ba37fe27-0183-4693-a798-f9efe1cef6b3',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:57:34.746026Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:58:41.615704Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T15:58:41.615704Z',
+  state: 'invitation',
+  invitation_key: '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '474'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:58:41.615704Z',
+  their_role: 'invitee',
+  their_did: 'ZmXw8U3SJg1eyCF2tVzPL',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:58:42.927022Z',
+  state: 'request',
+  invitation_key: '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '508'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:58:41.615704Z',
+  their_role: 'invitee',
+  their_did: 'ZmXw8U3SJg1eyCF2tVzPL',
+  their_label: 'issuer.agent',
+  my_did: 'BG39iADCAd4vpoAHxPtJ7L',
+  updated_at: '2023-11-15T15:58:43.035774Z',
+  state: 'response',
+  invitation_key: '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '502'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:58:41.615704Z',
+  their_role: 'invitee',
+  their_did: 'ZmXw8U3SJg1eyCF2tVzPL',
+  their_label: 'issuer.agent',
+  my_did: 'BG39iADCAd4vpoAHxPtJ7L',
+  updated_at: '2023-11-15T15:58:43.679964Z',
+  state: 'active',
+  invitation_key: '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  message_id: 'e09f99e0-8413-4131-9b43-fffc4a05e38e',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:58:43.918123Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  message_id: 'e09f99e0-8413-4131-9b43-fffc4a05e38e',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T15:58:43.918123Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:59:48.682403Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T15:59:48.682403Z',
+  state: 'invitation',
+  invitation_key: '4xx2mWKtJ8SjYZtFX7xBJhS5ATwL7GxixSnNz6zuvzTH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7521907d-ba4f-4e3b-8b27-4dad5a9bffab',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '8c5ee5bf-9e8a-4c9b-a15a-9a6716579542'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:59:48.682403Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'E2hzpJ8N8KSeAgaQtnHubD',
+  updated_at: '2023-11-15T15:59:48.772656Z',
+  state: 'request',
+  invitation_key: '4xx2mWKtJ8SjYZtFX7xBJhS5ATwL7GxixSnNz6zuvzTH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7521907d-ba4f-4e3b-8b27-4dad5a9bffab',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '86d7c923-a9d6-482f-957b-66d5d8eeb743',
+  invitation_msg_id: '8c5ee5bf-9e8a-4c9b-a15a-9a6716579542'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:59:48.682403Z',
+  their_role: 'inviter',
+  their_did: '5hDizVtjt9AV5okm3aioW5',
+  their_label: 'issuer.agent',
+  my_did: 'E2hzpJ8N8KSeAgaQtnHubD',
+  updated_at: '2023-11-15T15:59:49.419908Z',
+  state: 'response',
+  invitation_key: '4xx2mWKtJ8SjYZtFX7xBJhS5ATwL7GxixSnNz6zuvzTH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7521907d-ba4f-4e3b-8b27-4dad5a9bffab',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '86d7c923-a9d6-482f-957b-66d5d8eeb743',
+  invitation_msg_id: '8c5ee5bf-9e8a-4c9b-a15a-9a6716579542'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T15:59:48.682403Z',
+  their_role: 'inviter',
+  their_did: '5hDizVtjt9AV5okm3aioW5',
+  their_label: 'issuer.agent',
+  my_did: 'E2hzpJ8N8KSeAgaQtnHubD',
+  updated_at: '2023-11-15T15:59:49.712991Z',
+  state: 'active',
+  invitation_key: '4xx2mWKtJ8SjYZtFX7xBJhS5ATwL7GxixSnNz6zuvzTH',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '7521907d-ba4f-4e3b-8b27-4dad5a9bffab',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '86d7c923-a9d6-482f-957b-66d5d8eeb743',
+  invitation_msg_id: '8c5ee5bf-9e8a-4c9b-a15a-9a6716579542'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:00:25.971079Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:00:25.971079Z',
+  state: 'invitation',
+  invitation_key: 'CnSzx2ZkjgGeN53edrJzfzkSamAGzUjoq1cjudN7xZog',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bc400159-7f80-410e-b90e-71eb73131d33',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'cdd25717-03b4-4943-b2a8-f5430c49fd2e'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:00:25.971079Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'UCyGtWJzCMmdvzsFHYLsgk',
+  updated_at: '2023-11-15T16:00:26.183279Z',
+  state: 'request',
+  invitation_key: 'CnSzx2ZkjgGeN53edrJzfzkSamAGzUjoq1cjudN7xZog',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bc400159-7f80-410e-b90e-71eb73131d33',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '0b1c6a0b-db96-40d6-9dbf-3123c1d93310',
+  invitation_msg_id: 'cdd25717-03b4-4943-b2a8-f5430c49fd2e'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:00:25.971079Z',
+  their_role: 'inviter',
+  their_did: '4EAeU7LcQiEkWV7bphPrph',
+  their_label: 'issuer.agent',
+  my_did: 'UCyGtWJzCMmdvzsFHYLsgk',
+  updated_at: '2023-11-15T16:00:26.630276Z',
+  state: 'response',
+  invitation_key: 'CnSzx2ZkjgGeN53edrJzfzkSamAGzUjoq1cjudN7xZog',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bc400159-7f80-410e-b90e-71eb73131d33',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '0b1c6a0b-db96-40d6-9dbf-3123c1d93310',
+  invitation_msg_id: 'cdd25717-03b4-4943-b2a8-f5430c49fd2e'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:00:25.971079Z',
+  their_role: 'inviter',
+  their_did: '4EAeU7LcQiEkWV7bphPrph',
+  their_label: 'issuer.agent',
+  my_did: 'UCyGtWJzCMmdvzsFHYLsgk',
+  updated_at: '2023-11-15T16:00:26.905022Z',
+  state: 'active',
+  invitation_key: 'CnSzx2ZkjgGeN53edrJzfzkSamAGzUjoq1cjudN7xZog',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'bc400159-7f80-410e-b90e-71eb73131d33',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '0b1c6a0b-db96-40d6-9dbf-3123c1d93310',
+  invitation_msg_id: 'cdd25717-03b4-4943-b2a8-f5430c49fd2e'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:24.830492Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:01:24.830492Z',
+  state: 'invitation',
+  invitation_key: 'Hh2reE3GnkkyKYQPzDqECUcm9m8zjByEWSGsDkdWfoV9',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '1dfdc7c6-97ae-40c5-9e1a-9df97822c545',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '1dc62573-13a1-4325-bdf7-d783ededb365'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:24.830492Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'SbG4CHqS9KnAGGvAipKMxU',
+  updated_at: '2023-11-15T16:01:25.033796Z',
+  state: 'request',
+  invitation_key: 'Hh2reE3GnkkyKYQPzDqECUcm9m8zjByEWSGsDkdWfoV9',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '1dfdc7c6-97ae-40c5-9e1a-9df97822c545',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '5adf0c8f-793f-49a3-aaa0-a2d00b19b752',
+  invitation_msg_id: '1dc62573-13a1-4325-bdf7-d783ededb365'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:24.830492Z',
+  their_role: 'inviter',
+  their_did: '3PocWCVN9wNJwccY7BQAXW',
+  their_label: 'issuer.agent',
+  my_did: 'SbG4CHqS9KnAGGvAipKMxU',
+  updated_at: '2023-11-15T16:01:25.818777Z',
+  state: 'response',
+  invitation_key: 'Hh2reE3GnkkyKYQPzDqECUcm9m8zjByEWSGsDkdWfoV9',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '1dfdc7c6-97ae-40c5-9e1a-9df97822c545',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '5adf0c8f-793f-49a3-aaa0-a2d00b19b752',
+  invitation_msg_id: '1dc62573-13a1-4325-bdf7-d783ededb365'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:24.830492Z',
+  their_role: 'inviter',
+  their_did: '3PocWCVN9wNJwccY7BQAXW',
+  their_label: 'issuer.agent',
+  my_did: 'SbG4CHqS9KnAGGvAipKMxU',
+  updated_at: '2023-11-15T16:01:25.992307Z',
+  state: 'active',
+  invitation_key: 'Hh2reE3GnkkyKYQPzDqECUcm9m8zjByEWSGsDkdWfoV9',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '1dfdc7c6-97ae-40c5-9e1a-9df97822c545',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '5adf0c8f-793f-49a3-aaa0-a2d00b19b752',
+  invitation_msg_id: '1dc62573-13a1-4325-bdf7-d783ededb365'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:54.184463Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:01:54.184463Z',
+  state: 'invitation',
+  invitation_key: 'CHHg9t1ecaw3aTpph6V8q3dzz51pceVjMxpJF2DHmtqg',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '7458233e-7416-4cd0-b6c3-7679db3f5e16'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:54.184463Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'X81RHwxRDcqSmWXLD3Pn2N',
+  updated_at: '2023-11-15T16:01:54.248427Z',
+  state: 'request',
+  invitation_key: 'CHHg9t1ecaw3aTpph6V8q3dzz51pceVjMxpJF2DHmtqg',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '08a0381d-e8ea-4de2-bd62-f8e6d3c901a9',
+  invitation_msg_id: '7458233e-7416-4cd0-b6c3-7679db3f5e16'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:54.184463Z',
+  their_role: 'inviter',
+  their_did: 'NYButSUXvKF8VAhHw94QhN',
+  their_label: 'issuer.agent',
+  my_did: 'X81RHwxRDcqSmWXLD3Pn2N',
+  updated_at: '2023-11-15T16:01:54.880131Z',
+  state: 'response',
+  invitation_key: 'CHHg9t1ecaw3aTpph6V8q3dzz51pceVjMxpJF2DHmtqg',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '08a0381d-e8ea-4de2-bd62-f8e6d3c901a9',
+  invitation_msg_id: '7458233e-7416-4cd0-b6c3-7679db3f5e16'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:01:54.184463Z',
+  their_role: 'inviter',
+  their_did: 'NYButSUXvKF8VAhHw94QhN',
+  their_label: 'issuer.agent',
+  my_did: 'X81RHwxRDcqSmWXLD3Pn2N',
+  updated_at: '2023-11-15T16:01:55.138581Z',
+  state: 'active',
+  invitation_key: 'CHHg9t1ecaw3aTpph6V8q3dzz51pceVjMxpJF2DHmtqg',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '08a0381d-e8ea-4de2-bd62-f8e6d3c901a9',
+  invitation_msg_id: '7458233e-7416-4cd0-b6c3-7679db3f5e16'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  message_id: 'e2ad6993-2337-4071-bf15-b3a58e347b1b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:01:55.353967Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'd7870cfe-52b6-4baf-ba9b-ad3436871bed',
+  message_id: 'e2ad6993-2337-4071-bf15-b3a58e347b1b',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:01:55.353967Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:18.619480Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:02:18.619480Z',
+  state: 'invitation',
+  invitation_key: 'A93QN6VWtBzhek7qug3fwMpBKr29tU8xtxAoACyh5oA4',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'bf0cbac4-1995-4769-869c-375420144cc2'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:18.619480Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'QbhVc3K8ZNUPR91yYmJK6b',
+  updated_at: '2023-11-15T16:02:18.746496Z',
+  state: 'request',
+  invitation_key: 'A93QN6VWtBzhek7qug3fwMpBKr29tU8xtxAoACyh5oA4',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '2cd234c4-c06c-46ec-8ed5-0387dc282f1d',
+  invitation_msg_id: 'bf0cbac4-1995-4769-869c-375420144cc2'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:18.619480Z',
+  their_role: 'inviter',
+  their_did: 'CP1ZUHLMj65XErjTuKQU7z',
+  their_label: 'issuer.agent',
+  my_did: 'QbhVc3K8ZNUPR91yYmJK6b',
+  updated_at: '2023-11-15T16:02:19.541925Z',
+  state: 'response',
+  invitation_key: 'A93QN6VWtBzhek7qug3fwMpBKr29tU8xtxAoACyh5oA4',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '2cd234c4-c06c-46ec-8ed5-0387dc282f1d',
+  invitation_msg_id: 'bf0cbac4-1995-4769-869c-375420144cc2'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:18.619480Z',
+  their_role: 'inviter',
+  their_did: 'CP1ZUHLMj65XErjTuKQU7z',
+  their_label: 'issuer.agent',
+  my_did: 'QbhVc3K8ZNUPR91yYmJK6b',
+  updated_at: '2023-11-15T16:02:19.690660Z',
+  state: 'active',
+  invitation_key: 'A93QN6VWtBzhek7qug3fwMpBKr29tU8xtxAoACyh5oA4',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '2cd234c4-c06c-46ec-8ed5-0387dc282f1d',
+  invitation_msg_id: 'bf0cbac4-1995-4769-869c-375420144cc2'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  message_id: '593c902a-027c-4d5f-8aff-0c15a7b972b2',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:19.512821Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '436c113c-3f4f-4c9f-ba30-9f1618553464',
+  message_id: '593c902a-027c-4d5f-8aff-0c15a7b972b2',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:19.512821Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '502'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:27.627197Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:02:27.627197Z',
+  state: 'invitation',
+  invitation_key: 'GPr56tZcWAnkPBucUShFZT79qMxSM52pqqNwA8UAEAi',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'e03f3fc1-638f-4a11-b679-96538581b187'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '582'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:27.627197Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'JkftHfrJYz5EpZxTFTsGui',
+  updated_at: '2023-11-15T16:02:27.827082Z',
+  state: 'request',
+  invitation_key: 'GPr56tZcWAnkPBucUShFZT79qMxSM52pqqNwA8UAEAi',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '7aa6b9d3-34a1-4556-8207-46054e38fc72',
+  invitation_msg_id: 'e03f3fc1-638f-4a11-b679-96538581b187'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '627'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:27.627197Z',
+  their_role: 'inviter',
+  their_did: 'SwTnqGmDxm35w2stJRXS2Z',
+  their_label: 'issuer.agent',
+  my_did: 'JkftHfrJYz5EpZxTFTsGui',
+  updated_at: '2023-11-15T16:02:28.374015Z',
+  state: 'response',
+  invitation_key: 'GPr56tZcWAnkPBucUShFZT79qMxSM52pqqNwA8UAEAi',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '7aa6b9d3-34a1-4556-8207-46054e38fc72',
+  invitation_msg_id: 'e03f3fc1-638f-4a11-b679-96538581b187'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '617'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:27.627197Z',
+  their_role: 'inviter',
+  their_did: 'SwTnqGmDxm35w2stJRXS2Z',
+  their_label: 'issuer.agent',
+  my_did: 'JkftHfrJYz5EpZxTFTsGui',
+  updated_at: '2023-11-15T16:02:28.800491Z',
+  state: 'active',
+  invitation_key: 'GPr56tZcWAnkPBucUShFZT79qMxSM52pqqNwA8UAEAi',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '7aa6b9d3-34a1-4556-8207-46054e38fc72',
+  invitation_msg_id: 'e03f3fc1-638f-4a11-b679-96538581b187'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  message_id: '84db12c2-e2ae-4ee1-884b-00d172d706de',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:28.503790Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '46c5e1d2-7b3c-4132-a936-bd91afdcd2b7',
+  message_id: '84db12c2-e2ae-4ee1-884b-00d172d706de',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:28.503790Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:38.935483Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:02:38.935483Z',
+  state: 'invitation',
+  invitation_key: 'A5EovLiqeMeDciFmEHDrnpH7e6N7iGhPBM5TBLCKgobf',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'fad5d4e0-9a7b-44b0-b428-b79f22cf9594'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:38.935483Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'QA5DqnjrKjUTuD9HWv8xq9',
+  updated_at: '2023-11-15T16:02:39.029983Z',
+  state: 'request',
+  invitation_key: 'A5EovLiqeMeDciFmEHDrnpH7e6N7iGhPBM5TBLCKgobf',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '2312db61-d0c3-4ea0-a1ce-f4259b9a6a31',
+  invitation_msg_id: 'fad5d4e0-9a7b-44b0-b428-b79f22cf9594'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:38.935483Z',
+  their_role: 'inviter',
+  their_did: 'TgXxfjvSoaEM522ptWqWwu',
+  their_label: 'issuer.agent',
+  my_did: 'QA5DqnjrKjUTuD9HWv8xq9',
+  updated_at: '2023-11-15T16:02:39.662720Z',
+  state: 'response',
+  invitation_key: 'A5EovLiqeMeDciFmEHDrnpH7e6N7iGhPBM5TBLCKgobf',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '2312db61-d0c3-4ea0-a1ce-f4259b9a6a31',
+  invitation_msg_id: 'fad5d4e0-9a7b-44b0-b428-b79f22cf9594'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:38.935483Z',
+  their_role: 'inviter',
+  their_did: 'TgXxfjvSoaEM522ptWqWwu',
+  their_label: 'issuer.agent',
+  my_did: 'QA5DqnjrKjUTuD9HWv8xq9',
+  updated_at: '2023-11-15T16:02:39.741437Z',
+  state: 'active',
+  invitation_key: 'A5EovLiqeMeDciFmEHDrnpH7e6N7iGhPBM5TBLCKgobf',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '2312db61-d0c3-4ea0-a1ce-f4259b9a6a31',
+  invitation_msg_id: 'fad5d4e0-9a7b-44b0-b428-b79f22cf9594'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  message_id: '94959e64-2884-4375-a396-635c7cd09cdd',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:39.670108Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: '4c5d6aeb-e485-4a83-a719-b4746f3ea2ba',
+  message_id: '94959e64-2884-4375-a396-635c7cd09cdd',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:39.670108Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '407'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:44.531049Z',
+  their_role: 'invitee',
+  updated_at: '2023-11-15T16:02:44.531049Z',
+  state: 'invitation',
+  invitation_key: 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  rfc23_state: 'invitation-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '475'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:44.531049Z',
+  their_role: 'invitee',
+  their_did: 'YMpsCAGQhNxQzdb6yxYvDL',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:02:45.524151Z',
+  state: 'request',
+  invitation_key: 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  rfc23_state: 'request-received',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '509'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:44.531049Z',
+  their_role: 'invitee',
+  their_did: 'YMpsCAGQhNxQzdb6yxYvDL',
+  their_label: 'issuer.agent',
+  my_did: 'NxJcqoBr6XncUaWmd9HRTY',
+  updated_at: '2023-11-15T16:02:45.662189Z',
+  state: 'response',
+  invitation_key: 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  rfc23_state: 'response-sent',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:02:44.531049Z',
+  their_role: 'invitee',
+  their_did: 'YMpsCAGQhNxQzdb6yxYvDL',
+  their_label: 'issuer.agent',
+  my_did: 'NxJcqoBr6XncUaWmd9HRTY',
+  updated_at: '2023-11-15T16:02:46.066951Z',
+  state: 'active',
+  invitation_key: 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  rfc23_state: 'completed',
+  invitation_mode: 'once'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '225'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  message_id: 'f87c899a-4e5a-4bfd-ad8d-ef917259a55c',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:46.211974Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  message_id: 'f87c899a-4e5a-4bfd-ad8d-ef917259a55c',
+  content: 'issuer.agent received your message',
+  state: 'received',
+  sent_time: '2023-11-15T16:02:46.211974Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:04:53.981882Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:04:53.981882Z',
+  state: 'invitation',
+  invitation_key: 'BmmdqwKB3vKo49S66nnFvFTHa1MiFp51GFS61Vi8aS3B',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: '2f49d4ea-3ca0-4b06-b186-84dc7fb89355'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:04:53.981882Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: '8htEsBAYrKSDjyWSevtYeU',
+  updated_at: '2023-11-15T16:04:54.243123Z',
+  state: 'request',
+  invitation_key: 'BmmdqwKB3vKo49S66nnFvFTHa1MiFp51GFS61Vi8aS3B',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '3405bb83-36c1-4f10-b7ba-35957ee8a2f2',
+  invitation_msg_id: '2f49d4ea-3ca0-4b06-b186-84dc7fb89355'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:04:53.981882Z',
+  their_role: 'inviter',
+  their_did: 'LgvaGmUqDwqrcx7Fg1d9pK',
+  their_label: 'issuer.agent',
+  my_did: '8htEsBAYrKSDjyWSevtYeU',
+  updated_at: '2023-11-15T16:04:54.935061Z',
+  state: 'response',
+  invitation_key: 'BmmdqwKB3vKo49S66nnFvFTHa1MiFp51GFS61Vi8aS3B',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '3405bb83-36c1-4f10-b7ba-35957ee8a2f2',
+  invitation_msg_id: '2f49d4ea-3ca0-4b06-b186-84dc7fb89355'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:04:53.981882Z',
+  their_role: 'inviter',
+  their_did: 'LgvaGmUqDwqrcx7Fg1d9pK',
+  their_label: 'issuer.agent',
+  my_did: '8htEsBAYrKSDjyWSevtYeU',
+  updated_at: '2023-11-15T16:04:55.331115Z',
+  state: 'active',
+  invitation_key: 'BmmdqwKB3vKo49S66nnFvFTHa1MiFp51GFS61Vi8aS3B',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '3405bb83-36c1-4f10-b7ba-35957ee8a2f2',
+  invitation_msg_id: '2f49d4ea-3ca0-4b06-b186-84dc7fb89355'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  message_id: '69c51b06-9474-486a-ad74-e075215d2ee8',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:04:55.389137Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ad89f7b5-542b-4d29-9343-f8091823b83f',
+  message_id: '69c51b06-9474-486a-ad74-e075215d2ee8',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:04:55.389137Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '503'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:05:08.883698Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  updated_at: '2023-11-15T16:05:08.883698Z',
+  state: 'invitation',
+  invitation_key: '78s4AVPNNqaLeNVA8VLsAJE2xP4hbp2QfNUKEMoQaen7',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  rfc23_state: 'invitation-received',
+  invitation_mode: 'once',
+  invitation_msg_id: 'b020fbf1-776f-4cb2-9b33-fccfe5819959'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '583'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:05:08.883698Z',
+  their_role: 'inviter',
+  their_label: 'issuer.agent',
+  my_did: 'TeSwnVfJ3ZW2TrrgSLChtS',
+  updated_at: '2023-11-15T16:05:08.997799Z',
+  state: 'request',
+  invitation_key: '78s4AVPNNqaLeNVA8VLsAJE2xP4hbp2QfNUKEMoQaen7',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  request_id: '3692ee03-0f65-4f77-a2af-f4dd97314963',
+  invitation_msg_id: 'b020fbf1-776f-4cb2-9b33-fccfe5819959'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '628'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:05:08.883698Z',
+  their_role: 'inviter',
+  their_did: 'WwgV8B52D6eT9zbpRW3cvi',
+  their_label: 'issuer.agent',
+  my_did: 'TeSwnVfJ3ZW2TrrgSLChtS',
+  updated_at: '2023-11-15T16:05:09.721128Z',
+  state: 'response',
+  invitation_key: '78s4AVPNNqaLeNVA8VLsAJE2xP4hbp2QfNUKEMoQaen7',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  rfc23_state: 'response-received',
+  invitation_mode: 'once',
+  request_id: '3692ee03-0f65-4f77-a2af-f4dd97314963',
+  invitation_msg_id: 'b020fbf1-776f-4cb2-9b33-fccfe5819959'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '618'
+}
+Params: { topic: 'connections' }
+Body: {
+  created_at: '2023-11-15T16:05:08.883698Z',
+  their_role: 'inviter',
+  their_did: 'WwgV8B52D6eT9zbpRW3cvi',
+  their_label: 'issuer.agent',
+  my_did: 'TeSwnVfJ3ZW2TrrgSLChtS',
+  updated_at: '2023-11-15T16:05:10.223546Z',
+  state: 'active',
+  invitation_key: '78s4AVPNNqaLeNVA8VLsAJE2xP4hbp2QfNUKEMoQaen7',
+  routing_state: 'none',
+  accept: 'auto',
+  connection_protocol: 'connections/1.0',
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  rfc23_state: 'completed',
+  invitation_mode: 'once',
+  request_id: '3692ee03-0f65-4f77-a2af-f4dd97314963',
+  invitation_msg_id: 'b020fbf1-776f-4cb2-9b33-fccfe5819959'
+}
+Received POST request:
+Headers: {
+  host: '172.17.0.1:1081',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'user-agent': 'Python/3.6 aiohttp/3.7.4.post0',
+  'content-length': '210'
+}
+Params: { topic: 'basicmessages' }
+Body: {
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  message_id: 'a99547c2-becc-4343-9936-5ac6c692bf22',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:05:10.093062Z'
+}
+Received POST request to /topic/basicmessages
+Payload: {
+  connection_id: 'ba96671c-4c67-4667-896a-f8614a492b1a',
+  message_id: 'a99547c2-becc-4343-9936-5ac6c692bf22',
+  content: 'SELECT * FROM DUAL;',
+  state: 'received',
+  sent_time: '2023-11-15T16:05:10.093062Z'
+}
+File written to: bob_payloads/payload.txt
+File written to: bob_payloads/payload.txt

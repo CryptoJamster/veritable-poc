@@ -1,0 +1,316 @@
+Server is running on http://localhost:3201
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: '40413ed0-4255-440d-a547-bc422c053ede',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': '3f7f6776-5c07-4f5a-a0fb-e27113ff4df4',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiM2Y3ZjY3NzYtNWMwNy00ZjVhLWEwZmItZTI3MTEzZmY0ZGY0IiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyJGU1d5Z0NwZFRVM1I2WU56SDUzd00zdWVYU05EUVBCR2lFTVhVeThXYnNMciJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': '3f7f6776-5c07-4f5a-a0fb-e27113ff4df4',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: 'VWe6N1gM8fxW9X6fwnFJCn',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: '8be54b8f-4440-4e21-983a-d17f337d4291',
+  accept: 'auto',
+  updated_at: '2023-11-15T14:51:36.367775Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: '3f7f6776-5c07-4f5a-a0fb-e27113ff4df4',
+  created_at: '2023-11-15T14:51:36.295746Z',
+  request_id: 'ae28f543-f046-48e9-8d2a-791db842f5a3',
+  their_role: 'inviter',
+  invitation_key: 'FSWygCpdTU3R6YNzH53wM3ueXSNDQPBGiEMXUy8WbsLr'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID 40413ed0-4255-440d-a547-bc422c053ede
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: 'bfba8102-0765-4f79-a533-72925b3a3b5e',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': 'dbe40bce-b210-4405-852d-eeb707b81a03',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiZGJlNDBiY2UtYjIxMC00NDA1LTg1MmQtZWViNzA3YjgxYTAzIiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyIzdU1ZUmtDVU5DZ1JkMlI2dkZTSEFkczVYTHloR3ZWa3BweUtVRU1lYXFMcyJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': 'dbe40bce-b210-4405-852d-eeb707b81a03',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: '2FjWotZkJY5GuoxQoP2hUZ',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: 'f2b8f996-e270-48dd-ad9e-565f2ab54116',
+  accept: 'auto',
+  updated_at: '2023-11-15T15:03:24.805713Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: 'dbe40bce-b210-4405-852d-eeb707b81a03',
+  created_at: '2023-11-15T15:03:24.650849Z',
+  request_id: 'd7e2175a-416e-4b98-9a0c-abd73ff59867',
+  their_role: 'inviter',
+  invitation_key: '3uMYRkCUNCgRd2R6vFSHAds5XLyhGvVkppyKUEMeaqLs'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID bfba8102-0765-4f79-a533-72925b3a3b5e
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: '385341e6-4689-4fdf-bda1-401d1ac011b8',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': 'a9c0066a-c7a6-40f2-9af9-20b0291e0364',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiYTljMDA2NmEtYzdhNi00MGYyLTlhZjktMjBiMDI5MWUwMzY0IiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyIzTVUyNlQ0bU1aVGNFNnNOczd1SEN4NVhhbkZBZDFQbUhQamhQVm1OZEhWSiJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': 'a9c0066a-c7a6-40f2-9af9-20b0291e0364',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: '6Ha6YcGsT2SE8gJBrAZZ2B',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: 'c3509e36-d237-4678-a7da-5fd8019bcf7b',
+  accept: 'auto',
+  updated_at: '2023-11-15T15:45:19.170303Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: 'a9c0066a-c7a6-40f2-9af9-20b0291e0364',
+  created_at: '2023-11-15T15:45:18.976536Z',
+  request_id: '399feedd-70c3-4fd4-9533-b415210c3199',
+  their_role: 'inviter',
+  invitation_key: '3MU26T4mMZTcE6sNs7uHCx5XanFAd1PmHPjhPVmNdHVJ'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID 385341e6-4689-4fdf-bda1-401d1ac011b8
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: 'cf094560-0f61-4881-afb4-b21742b27879',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': 'd930432f-6375-42fd-90de-5751985dd981',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiZDkzMDQzMmYtNjM3NS00MmZkLTkwZGUtNTc1MTk4NWRkOTgxIiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyJGWW10eUFGdTJ4V2JHaUE4VXhnRzdkZjF2QW50ZTV0cm5Lak1jZkRWbkM1UyJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': 'd930432f-6375-42fd-90de-5751985dd981',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: 'HLwvcLC8W5sLrtGuFWipdw',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: '1e7dcecb-4100-41b0-a4de-6e0cc990ab58',
+  accept: 'auto',
+  updated_at: '2023-11-15T15:52:03.991133Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: 'd930432f-6375-42fd-90de-5751985dd981',
+  created_at: '2023-11-15T15:52:03.843960Z',
+  request_id: 'b6f1028e-d07d-4df3-ba9b-83d07a08d9fb',
+  their_role: 'inviter',
+  invitation_key: 'FYmtyAFu2xWbGiA8UxgG7df1vAnte5trnKjMcfDVnC5S'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID cf094560-0f61-4881-afb4-b21742b27879
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: '56e41240-2ba5-41a1-a0e2-11e24719ecda',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': '0e4f9cdf-0e59-4f13-a651-f56edaa9a60e',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiMGU0ZjljZGYtMGU1OS00ZjEzLWE2NTEtZjU2ZWRhYTlhNjBlIiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyJGQTdoZVp4ZUpwdThVYmVENW5UM2p4ZUZxVEYxdGRKRzIxSk1lSDVxSEQ0eCJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': '0e4f9cdf-0e59-4f13-a651-f56edaa9a60e',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: '2ce2ni5KF3ty8XixvSd4w9',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: 'b77f35b0-9a57-45cd-a4c8-87b06b361590',
+  accept: 'auto',
+  updated_at: '2023-11-15T15:57:33.612703Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: '0e4f9cdf-0e59-4f13-a651-f56edaa9a60e',
+  created_at: '2023-11-15T15:57:33.490526Z',
+  request_id: 'ebfb889c-5d9d-4cbe-bf76-5bf07af01096',
+  their_role: 'inviter',
+  invitation_key: 'FA7heZxeJpu8UbeD5nT3jxeFqTF1tdJG21JMeH5qHD4x'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID 56e41240-2ba5-41a1-a0e2-11e24719ecda
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: '5e8d1c2d-3e9c-49af-b5c2-4c045002a48b',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': 'eefc7d0f-3ecf-4e0a-a1e6-49f2572fed1d',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiZWVmYzdkMGYtM2VjZi00ZTBhLWExZTYtNDlmMjU3MmZlZDFkIiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyI4M3pBMWpCZzI1Zk1vOFZyYmtQbm5kWWdxcjVKV2plNVNacW5DMVVSUFI0cSJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': 'eefc7d0f-3ecf-4e0a-a1e6-49f2572fed1d',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: 'ZmXw8U3SJg1eyCF2tVzPL',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: '00364841-2782-468f-ba4c-b9721203be5b',
+  accept: 'auto',
+  updated_at: '2023-11-15T15:58:42.760725Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: 'eefc7d0f-3ecf-4e0a-a1e6-49f2572fed1d',
+  created_at: '2023-11-15T15:58:42.655796Z',
+  request_id: '46ef2a59-5964-417d-b1af-e270fe7d356a',
+  their_role: 'inviter',
+  invitation_key: '83zA1jBg25fMo8VrbkPnndYgqr5JWje5SZqnC1URPR4q'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID 5e8d1c2d-3e9c-49af-b5c2-4c045002a48b
+Send message response {}
+Invitation message {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: 'http://localhost:8041/connections/create-invitation',
+  headers: { 'Content-Type': 'application/json' },
+  data: '{}'
+}
+Invitation response {
+  connection_id: 'e24f85c7-d43c-44f7-bc97-21d9c9f76481',
+  invitation: {
+    '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+    '@id': 'adb0bfd6-1562-4019-846c-4633eeb395ba',
+    serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+    recipientKeys: [ 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB' ],
+    label: 'verifier.agent'
+  },
+  invitation_url: 'http://veritable-cloudagent-verifier:8000?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiYWRiMGJmZDYtMTU2Mi00MDE5LTg0NmMtNDYzM2VlYjM5NWJhIiwgInNlcnZpY2VFbmRwb2ludCI6ICJodHRwOi8vdmVyaXRhYmxlLWNsb3VkYWdlbnQtdmVyaWZpZXI6ODAwMCIsICJyZWNpcGllbnRLZXlzIjogWyJEdUwzUmJyQkZkbXFCMmRBQmZmRmd3S2p0RlRhR3FpRlhhZzQza2JFbVNWQiJdLCAibGFiZWwiOiAidmVyaWZpZXIuYWdlbnQifQ=='
+}
+Invitation body {
+  '@type': 'did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation',
+  '@id': 'adb0bfd6-1562-4019-846c-4633eeb395ba',
+  serviceEndpoint: 'http://veritable-cloudagent-verifier:8000',
+  recipientKeys: [ 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB' ],
+  label: 'verifier.agent'
+}
+Accept invitation response {
+  state: 'request',
+  connection_protocol: 'connections/1.0',
+  my_did: 'YMpsCAGQhNxQzdb6yxYvDL',
+  rfc23_state: 'request-sent',
+  invitation_mode: 'once',
+  routing_state: 'none',
+  connection_id: '44c184d9-8b58-47ea-ab72-881ee1c8c0c0',
+  accept: 'auto',
+  updated_at: '2023-11-15T16:02:45.289028Z',
+  their_label: 'verifier.agent',
+  invitation_msg_id: 'adb0bfd6-1562-4019-846c-4633eeb395ba',
+  created_at: '2023-11-15T16:02:45.119938Z',
+  request_id: '3b9c5d87-adef-447f-977f-28e63504daf6',
+  their_role: 'inviter',
+  invitation_key: 'DuL3RbrBFdmqB2dABffFgwKjtFTaGqiFXag43kbEmSVB'
+}
+Message content {"content":"SELECT * FROM DUAL;"}
+Connection ID e24f85c7-d43c-44f7-bc97-21d9c9f76481
+Send message response {}

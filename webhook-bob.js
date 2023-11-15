@@ -80,17 +80,17 @@ app.get("/log-sse", (req, res) => {
   res.setHeader("Connection", "keep-alive");
 
   // Create a watcher for the log file
-  const logFilePath = "./logs/webhook-bob.log"; // Update with the correct log file path
+  const logFilePath = "./bob_payloads/payload.txt"; // Update with the correct log file path
   const watcher = chokidar.watch(logFilePath);
 
-  // Send initial log content to the client
-  const initialLogContent = fs.readFileSync(logFilePath, "utf8");
-  const initialLogLines = initialLogContent.split("\n");
-  for (const line of initialLogLines) {
-    if (line.trim() !== "") {
-      res.write(`data: ${line}\n\n`);
-    }
-  }
+  // // Send initial log content to the client
+  // const initialLogContent = fs.readFileSync(logFilePath, "utf8");
+  // const initialLogLines = initialLogContent.split("\n");
+  // for (const line of initialLogLines) {
+  //   if (line.trim() !== "") {
+  //     res.write(`data: ${line}\n\n`);
+  //   }
+  // }
 
   // Listen for changes to the log file and send updates over SSE
   watcher.on("change", path => {

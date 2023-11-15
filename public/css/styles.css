@@ -28,8 +28,9 @@ button:hover {
 }
 
 #apiResponse {
-    display: none; /* Hide the element by default */
-    margin-top: 20px;
+    max-height: 300px; /* Limit the height of the log container */
+    overflow-y: scroll; /* Add vertical scrollbar when content overflows */
+    border: 1px solid #ccc; /* Add a border for visual separation */
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

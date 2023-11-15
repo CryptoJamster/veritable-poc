@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>DIDComm Query (Alice)</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
+
 <body>
     <h1>DIDComm Query (Alice)</h1>
-    
+
     <!-- Input element for message content -->
     <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT * FROM DUAL;">
-    
+
     <!-- Button to trigger API actions -->
     <button id="callApiButton">Send query</button>
-    
+
     <!-- Element to display API responses -->
-    <div id="apiResponse"></div>
+    <div id="apiResponse">
+        <h2>Receipt confirmation:</h2>
+    </div>
 
     <div id="logContainer">
-        <h2>Log Output:</h2>
-      </div>
+        <h2>Received:</h2>
+    </div>
 
     <script>
-        // Get references to HTML elements
         const callApiButton = document.getElementById("callApiButton");
-        const apiResponse = document.getElementById("apiResponse");
-        const messageContentInput = document.getElementById("messageContent");
 
-        // Add a click event listener to the button
+        // Function to generate a timestamp in the format HH:mm:ss
+        function getTimestamp() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
         callApiButton.addEventListener("click", async () => {
             try {
+                const apiResponse = document.getElementById("apiResponse");
+                const messageContentInput = document.getElementById("messageContent");
                 const messageContent = messageContentInput.value;
 
-                // Step 1: Send an HTTP GET request to create an invitation
                 const createInvitationResponse = await fetch(`http://localhost:3200/create-invitation`);
-                console.log("Create Invitation Response: " + createInvitationResponse.data);
-
-                // Parse the JSON response for creating an invitation
                 const invitationData = await createInvitationResponse.json();
 
-                // Introduce a 1-second delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
-                // Step 2: Send an HTTP GET request to receive an invitation
                 const receiveInvitationResponse = await fetch(`http://localhost:3200/receive-invitation`);
-                console.log("Receive Invitation Response: " + receiveInvitationResponse.data);
-
-                // Parse the JSON response for receiving an invitation
                 const receiveInvitationData = await receiveInvitationResponse.json();
 
-                // Introduce a 1-second delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
-                
-                const fileContentsElement = document.getElementById("apiResponse"); // Reuse the apiResponse element
 
-                // Step 3: Send an HTTP GET request to send a message
                 const sendMessageResponse = await fetch(`http://localhost:3200/send-message?messageContent=${messageContent}`);
-
-                // Introduce a 1-second delay
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
                 if (sendMessageResponse.ok) {
-                    // If the response is OK (status code 200), display the file contents in apiResponse
-                    const fileContents = await fetch("http://localhost:3200/get-latest-message"); // Fetch the file contents
-                    const fileText = await fileContents.text(); // Assuming the content is plain text
-                    fileContentsElement.textContent = fileText;
+                    const fileContentsResponse = await fetch("http://localhost:3200/get-latest-message");
+                    const fileText = await fileContentsResponse.text();
+
+                    if (fileText.includes("verifier.agent received your message")) {
+                        const timestampedMessage = `[${getTimestamp()}] Bob received your message`;
+                        apiResponse.innerHTML = `<h2>Receipt confirmation:</h2><p>${timestampedMessage}</p>`;
+                    } else {
+                        const timestampedMessage = `[${getTimestamp()}] ${fileText}`;
+                        apiResponse.innerHTML = `<h2>Receipt confirmation:</h2><p>${timestampedMessage}</p>`;
+                    }
                 } else {
-                    // If the response is not OK (e.g., status code 400), display the error message as text
                     const errorText = await sendMessageResponse.text();
-                    fileContentsElement.innerHTML = "Error: " + errorText;
+                    const timestampedError = `[${getTimestamp()}] ${errorText}`;
+                    apiResponse.innerHTML = `<h2>Error:</h2><p>${timestampedError}</p>`;
                 }
 
-                // Show the #apiResponse element
-                fileContentsElement.style.display = "block";               
+                apiResponse.style.display = "block";
             } catch (error) {
-                // Handle errors: display an error message in the div
-                apiResponse.innerHTML = "Error: " + error.message;
+                const timestampedError = `[${getTimestamp()}] ${error.message}`;
+                apiResponse.innerHTML = `<h2>Error:</h2><p>${timestampedError}</p>`;
             }
-            });
+        });
 
-            try {
-            // Get references to HTML elements
-            const logContainer = document.getElementById("logContainer"); // Container for log content
+        try {
+            const logContainer = document.getElementById("logContainer");
 
-            // Function to append log content
             function appendLogContent(logText) {
                 const logMessage = document.createElement("p");
-                logMessage.textContent = logText;
+
+                if (logText.includes("verifier.agent received your message")) {
+                    const timestampedMessage = `[${getTimestamp()}] Bob received your message`;
+                    logMessage.textContent = timestampedMessage;
+                } else {
+                    const timestampedMessage = `[${getTimestamp()}] ${logText}`;
+                    logMessage.textContent = timestampedMessage;
+                }
+
                 logContainer.appendChild(logMessage);
-                // Scroll to the bottom
                 logContainer.scrollTop = logContainer.scrollHeight;
             }
 
-            // Establish an SSE connection to receive log updates
             const logSSE = new EventSource("http://localhost:1080/log-sse");
             console.log("Connected to log SSE");
 
-            // Listen for log updates from the server
             logSSE.addEventListener("message", (event) => {
                 const logText = event.data;
                 appendLogContent(logText);
@@ -103,10 +107,11 @@
 
             logContainer.style.display = "block";
         } catch (error) {
-            // Handle errors: display an error message in the div
+            const timestampedError = `[${getTimestamp()}] ${error.message}`;
             console.error("SSE Error:", error);
-            logContainer.innerHTML = "Error: " + error.message;
+            logContainer.innerHTML = `<h2>Error:</h2><p>${timestampedError}</p>`;
         }
     </script>
 </body>
+
 </html>
