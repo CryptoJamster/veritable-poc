@@ -27,17 +27,6 @@ button:hover {
     background-color: #005bad;
 }
 
-#apiResponse {
-    display: none; /* Hide the element by default */
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-}
-
 #messageContent {
     padding: 5px;
     border: 1px solid #ccc;
@@ -46,14 +35,35 @@ button:hover {
     font-size: 16px;
 }
 
-#logContainer {
-    max-height: 300px; /* Limit the height of the log container */
-    overflow-y: scroll; /* Add vertical scrollbar when content overflows */
-    border: 1px solid #ccc; /* Add a border for visual separation */
+.log-container {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
+    margin-top: 20px;
+}
+
+.log-container h2 {
+    margin-bottom: 10px;
+}
+
+.log-message {
+    margin-bottom: 5px;
+}
+
+.user-message {
+    color: #007bff;
+}
+
+.server-message {
+    color: #28a745;
+}
+
+.error-message {
+    color: #dc3545;
 }

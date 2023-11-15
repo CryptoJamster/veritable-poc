@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
-const chokidar = require('chokidar');
+// const chokidar = require('chokidar');
 
 const app = express();
 const port = 1080;
@@ -49,9 +49,9 @@ app.post("/topic/:topic", async (req, res) => {
         console.log(`File written to: ${filePath}`);
 
         try {
-          // Save the payload content to a file
-          fs.writeFileSync(filePath, payload.content);
-          console.log(`File written to: ${filePath}`);
+          // Append the payload content to the file
+          fs.writeFileSync(filePath, payload.content + '\n');
+          console.log(`File appended to: ${filePath}`);
         } catch (error) {
           // Handle errors if there's an issue writing to the file
           console.error("Error writing to file:", error);
@@ -73,38 +73,38 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
-// Define an endpoint for SSE log updates
-app.get("/log-sse", (req, res) => {
-  res.setHeader("Content-Type", "text/event-stream");
-  res.setHeader("Cache-Control", "no-cache");
-  res.setHeader("Connection", "keep-alive");
+// // Define an endpoint for SSE log updates
+// app.get("/log-sse", (req, res) => {
+//   res.setHeader("Content-Type", "text/event-stream");
+//   res.setHeader("Cache-Control", "no-cache");
+//   res.setHeader("Connection", "keep-alive");
 
-  // Create a watcher for the log file
-  const logFilePath = "./logs/webhook-alice.log"; // Update with the correct log file path
-  const watcher = chokidar.watch(logFilePath);
+//   // Create a watcher for the log file
+//   const logFilePath = "./logs/webhook-alice.log"; // Update with the correct log file path
+//   const watcher = chokidar.watch(logFilePath);
 
-  // Send initial log content to the client
-  const initialLogContent = fs.readFileSync(logFilePath, "utf8");
-  const initialLogLines = initialLogContent.split("\n");
-  for (const line of initialLogLines) {
-    if (line.trim() !== "") {
-      res.write(`data: ${line}\n\n`);
-    }
-  }
+//   // Send initial log content to the client
+//   const initialLogContent = fs.readFileSync(logFilePath, "utf8");
+//   const initialLogLines = initialLogContent.split("\n");
+//   for (const line of initialLogLines) {
+//     if (line.trim() !== "") {
+//       res.write(`data: ${line}\n\n`);
+//     }
+//   }
 
-  // Listen for changes to the log file and send updates over SSE
-  watcher.on("change", path => {
-    try {
-      const logContent = fs.readFileSync(path, "utf8");
-      const logLines = logContent.split("\n");
-      for (const line of logLines) {
-        if (line.trim() !== "") {
-          res.write(`data: ${line}\n\n`);
-        }
-      }
-    } catch (error) {
-      // Handle the error here, e.g., log it or take appropriate action
-      console.error("Error while sending log updates over SSE:", error);
-    }
-  });
-});
+//   // Listen for changes to the log file and send updates over SSE
+//   watcher.on("change", path => {
+//     try {
+//       const logContent = fs.readFileSync(path, "utf8");
+//       const logLines = logContent.split("\n");
+//       for (const line of logLines) {
+//         if (line.trim() !== "") {
+//           res.write(`data: ${line}\n\n`);
+//         }
+//       }
+//     } catch (error) {
+//       // Handle the error here, e.g., log it or take appropriate action
+//       console.error("Error while sending log updates over SSE:", error);
+//     }
+//   });
+// });
