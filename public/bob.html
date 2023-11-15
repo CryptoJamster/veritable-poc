@@ -59,8 +59,8 @@
                     const fileContentsResponse = await fetch("http://localhost:3201/get-latest-message");
                     const fileText = await fileContentsResponse.text();
 
-                    if (fileText.includes("verifier.agent received your message")) {
-                        const timestampedMessage = `[${getTimestamp()}] Bob received your message`;
+                    if (fileText.includes("issuer.agent received your message")) {
+                        const timestampedMessage = `[${getTimestamp()}] Alice received your message`;
                         apiResponse.innerHTML = `<h2>Receipt confirmation:</h2><p>${timestampedMessage}</p>`;
                     } else {
                         const timestampedMessage = `[${getTimestamp()}] ${fileText}`;
@@ -85,8 +85,8 @@
             function appendLogContent(logText) {
                 const logMessage = document.createElement("p");
 
-                if (logText.includes("verifier.agent received your message")) {
-                    const timestampedMessage = `[${getTimestamp()}] Bob received your message`;
+                if (logText.includes("issuer.agent received your message")) {
+                    const timestampedMessage = `[${getTimestamp()}] Alice received your message`;
                     logMessage.textContent = timestampedMessage;
                 } else {
                     const timestampedMessage = `[${getTimestamp()}] ${logText}`;
