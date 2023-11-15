@@ -27,6 +27,21 @@ button:hover {
     background-color: #005bad;
 }
 
+<<<<<<< HEAD
+=======
+#apiResponse {
+    max-height: 300px; /* Limit the height of the log container */
+    overflow-y: scroll; /* Add vertical scrollbar when content overflows */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+>>>>>>> fe31d20ecc33900bd8fce546aafd87e612e1c07a
 #messageContent {
     padding: 5px;
     border: 1px solid #ccc;
