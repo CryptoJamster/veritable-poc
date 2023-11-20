@@ -9,11 +9,15 @@
 <body>
     <h1>DIDComm Query (Bob)</h1>
 
-    <!-- Input element for message content -->
-    <input type="text" id="messageContent" placeholder="Enter your message" value="SELECT * FROM DUAL;">
+    <div id="editorContainer">
+        <textarea id="messageContent" placeholder="Enter your message"
+        >SELECT mineral_id, SUM(mass_in_storage) FROM test_query_1_table GROUP BY mineral_id
+        </textarea>
+    </div>
 
     <!-- Button to trigger API actions -->
     <button id="callApiButton">Send query</button>
+    <button id="resetConnectionButton">Reset Connection</button>
 
     <!-- Element to display API responses -->
     <div id="logContainer" class="log-container">
@@ -24,34 +28,29 @@
     <script>
         const callApiButton = document.getElementById("callApiButton");
 
-        function getTimestamp() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            return `${hours}:${minutes}:${seconds}`;
-        }
-
         async function fetchLatestMessage() {
-    try {
-        const fileContentsResponse = await fetch("http://localhost:3201/get-latest-message");
-        const fileText = await fileContentsResponse.text();
+            try {
+                const fileContentsResponse = await fetch("http://localhost:3201/get-latest-message");
+                const fileText = await fileContentsResponse.text();
 
-        if (fileText.trim() !== '') {
-            if (fileText.includes("issuer.agent received your message")) {
-                return `Alice received your message`;
-            } else {
-                return `${fileText}`;
+                if (fileText.trim() !== '') {
+                    if (fileText.includes("issuer.agent received your message")) {
+                        return `Alice received your message`;
+                    }
+                    else if (fileText.includes("Welcome!")) {
+                        return `${fileText}`;
+                    }
+                    else {
+                        return `Alice: ${fileText}`;
+                    }
+                } else {
+                    return null;
+                }
+            } catch (error) {
+                console.error("Error fetching latest message:", error);
+                return null; // Return null in case of an error
             }
-        } else {
-            return null;
         }
-    } catch (error) {
-        console.error("Error fetching latest message:", error);
-        return null; // Return null in case of an error
-    }
-}
-
 
         async function logLatestMessage(message) {
             const latestMessageElement = document.getElementById("latestMessage");
@@ -73,17 +72,7 @@
         callApiButton.addEventListener("click", async () => {
             try {
                 const messageContentInput = document.getElementById("messageContent");
-                const messageContent = messageContentInput.value;
-
-                const createInvitationResponse = await fetch(`http://localhost:3201/create-invitation`);
-                const invitationData = await createInvitationResponse.json();
-
-                await new Promise(resolve => setTimeout(resolve, 1000));
-
-                const receiveInvitationResponse = await fetch(`http://localhost:3201/receive-invitation`);
-                const receiveInvitationData = await receiveInvitationResponse.json();
-
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                const messageContent = messageContentInput.value
 
                 const sendMessageResponse = await fetch(`http://localhost:3201/send-message?messageContent=${messageContent}`);
                 await new Promise(resolve => setTimeout(resolve, 1000));

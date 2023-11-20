@@ -20,19 +20,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 button:hover {
     background-color: #005bad;
 }
 
+#editorContainer {
+    display: flex;
+    justify-content: center; /* Center the editor container horizontally */
+}
+
 #messageContent {
-    padding: 5px;
+    flex: 1;
+    margin: 10px; /* Add margin for spacing */
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 10px;
     font-size: 16px;
+    resize: vertical;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background-color: #fff; /* Updated background color to white */
+    color: #333;
+    font-family: 'Courier New', monospace;
+    height: 300px; /* Increased height */
 }
 
 .log-container {
@@ -66,4 +78,10 @@ button:hover {
 
 .error-message {
     color: #dc3545;
+}
+
+/* Adjusted styles to move buttons below messageContent */
+#callApiButton,
+#resetConnectionButton {
+    margin-top: 10px;
 }
