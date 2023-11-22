@@ -1,10 +1,10 @@
 // Import required packages
-const express = require("express");
+const express = require('express');
 const axios = require('axios');
-const cors = require("cors");
-const fs = require("fs");
+const cors = require('cors');
+const fs = require('fs');
 const path = require('path');
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
 
 // Create an Express application
 const app = express();
@@ -15,7 +15,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for serving your HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'bob.html'));
+  res.sendFile(path.join(__dirname, '/public/bob.html'));
+});
+
+// Serve the bob.js file with the appropriate Content-Type
+app.get('/bob.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'bob.js'));
+  res.setHeader('Content-Type', 'text/javascript');
 });
 
 // Enable Cross-Origin Resource Sharing (CORS)
@@ -23,79 +29,6 @@ app.use(cors());
 
 // Enable JSON Body Parser
 app.use(bodyParser.json());
-
-// Global variables to store data
-let responseCreateInvitationGlobal = "";
-let invitationBodyGlobal = "";
-let connectionIdGlobal = "";
-
-// Define an endpoint to create an invitation
-app.get("/create-invitation", async (req, res) => {
-  try {
-    // Step 1: Prepare an empty JSON object as the request data
-    const data = JSON.stringify({});
-    console.log("Data output", data);
-
-    // Step 2: Configure an HTTP POST request to create an invitation
-    const configCreateInvitation = {
-      method: 'post',
-      maxBodyLength: Infinity,
-      url: 'http://localhost:8041/connections/create-invitation',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: data,
-    };
-    console.log("Config output", configCreateInvitation);
-
-    // Step 3: Send the request to create an invitation
-    responseCreateInvitationGlobal = await axios.request(configCreateInvitation);
-    console.log("Create invitation response", responseCreateInvitationGlobal.data);
-
-    // Step 4: Extract the invitation from the response
-    invitationBodyGlobal = responseCreateInvitationGlobal.data.invitation;
-    console.log("Invitation body response", invitationBodyGlobal);
-
-    // Step 5: Return the response data
-    res.json(responseCreateInvitationGlobal.data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
-
-// Define an endpoint to receive an invitation
-app.get("/receive-invitation", async (req, res) => {
-  try {
-    // Step 6: Check if an invitation is available
-    if (!invitationBodyGlobal) {
-      // Handle the case where invitationBodyGlobal is not set
-      res.status(500).json({ error: 'Invitation data is not available.' });
-      return;
-    }
-
-    // Step 7: Configure an HTTP POST request to receive the invitation
-    const receiveInvitationConfig = {
-      method: 'post',
-      maxBodyLength: Infinity,
-      url: 'http://localhost:8021/connections/receive-invitation',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: invitationBodyGlobal,
-    };
-
-    // Step 8: Send the request to receive the invitation
-    const receiveInvitationResponse = await axios.request(receiveInvitationConfig);
-    console.log("Receive invitation response", receiveInvitationResponse.data);
-
-    // Step 9: Return the response data
-    res.json(receiveInvitationResponse.data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
 
 // Define an endpoint to send a message
 app.get("/send-message", async (req, res) => {
@@ -110,27 +43,39 @@ app.get("/send-message", async (req, res) => {
     let data = JSON.stringify({
       content: messageContent,
     });
-    console.log("Data:", data);
+    console.log("Message content", data);
 
-    // Step 11: Retrieve the connection ID from the global variable
-    connectionIdGlobal = responseCreateInvitationGlobal.data.connection_id;
+    // Step 11: Retrieve the latest connection from the /connections/ endpoint
+    const connectionsResponse = await axios.get('http://localhost:8041/connections');
 
-    // Step 12: Configure an HTTP POST request to send the message
+    // Step 12: Extract the connection_id from the last connection in the results array
+    const results = connectionsResponse.data.results;
+
+    if (!results || results.length === 0) {
+      return res.status(500).send('No connections found in the latest response.');
+    }
+
+    const latestConnection = results[results.length - 1];
+    const connectionId = latestConnection.connection_id;
+
+    console.log("Connection ID", connectionId);
+
+    // Step 13: Configure an HTTP POST request to send the message
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `http://localhost:8041/connections/${connectionIdGlobal}/send-message`,
+      url: `http://localhost:8041/connections/${connectionId}/send-message`,
       headers: {
         'Content-Type': 'application/json'
       },
       data: data
     };
 
-    // Step 13: Send the message and handle the response
+    // Step 14: Send the message and handle the response
     const response = await axios.request(config);
-    console.log("Response", response.data);
+    console.log("Send message response", response.data);
 
-    // Step 14: Return the response data
+    // Step 15: Return the response data
     res.send(response.data);
   } catch (error) {
     console.error(error);
@@ -139,12 +84,12 @@ app.get("/send-message", async (req, res) => {
 });
 
 // Define an endpoint to retrieve the latest message
-app.get("/get-latest-message", (req, res) => {
+app.get("/get-latest-message", async (req, res) => {
   try {
     // Step 1: Read the contents of the file created by webhook-bob.js
     const content = fs.readFileSync("bob_payloads/payload.txt", "utf8");
 
-    // Step 2: Return the content as a response
+    // Step 5: Return the content as a response
     res.status(200).send(content);
   } catch (error) {
     console.error(error);

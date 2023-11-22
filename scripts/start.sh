@@ -26,6 +26,13 @@ echo -en "\n\nWaitingForHolderReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1
 echo -en "\n\nWaitingForVerifierReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1; RES=$(curl -sf localhost:3003 2>&1); echo -n .; done
 echo -en "\n\nWaitingForRegulatorReact"; RES=""; while [[ -z "$RES" ]]; do sleep .1; RES=$(curl -sf localhost:3004 2>&1); echo -n .; done
 
+# Install dependencies
+#!/bin/bash
+
+if [ ! -d "node_modules" ]; then
+  npm install
+fi
+
 # Start your Node.js applications
 echo "Starting Node.js applications..."
 node webhook-alice.js > logs/webhook-alice.log 2>&1 &

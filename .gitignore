@@ -10,3 +10,10 @@ cypress/downloads
 cypress/videos
 cypress/screenshots
 cypress.env.json
+
+alice_payloads
+bob_payloads
+logs
+node_modules
+/received.sql
+/response.txt

@@ -20,51 +20,69 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 button:hover {
     background-color: #005bad;
 }
 
-#apiResponse {
-    display: none; /* Hide the element by default */
-    margin-top: 20px;
+#editorContainer {
+    display: flex;
+    justify-content: center; /* Center the editor container horizontally */
+}
+
+#messageContent {
+    flex: 1;
+    margin: 10px; /* Add margin for spacing */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background-color: #fff; /* Updated background color to white */
+    color: #333;
+    font-family: 'Courier New', monospace;
+    height: 300px; /* Increased height */
+}
+
+.log-container {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin: 10px; /* Add margin for spacing */
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
+    margin-top: 20px;
 }
 
-#messageContent {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 16px;
+.log-container h2 {
+    margin-bottom: 10px;
 }
 
-/* Style the dropdown (select) element */
-#personaSelect {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    background-color: #fff; /* Background color for the dropdown */
-    color: #333; /* Text color for the dropdown */
+.log-message {
+    margin-bottom: 5px;
 }
 
-/* Style the dropdown options */
-#personaSelect option {
-    background-color: #fff; /* Background color for the options */
-    color: #333; /* Text color for the options */
+.user-message {
+    color: #007bff;
 }
 
-/* Add some spacing between the dropdown and other elements */
-#personaSelect + input,
-#personaSelect + button {
+.server-message {
+    color: #28a745;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+/* Adjusted styles to move buttons below messageContent */
+#callApiButton,
+#resetConnectionButton {
     margin-top: 10px;
 }
