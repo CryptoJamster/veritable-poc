@@ -41,7 +41,7 @@
                         return `${fileText}`;
                     }
                     else {
-                        return `Alice: ${fileText}`;
+                        return `${fileText.trim().replace(/^Output:\s*/, '')}`;
                     }
                 } else {
                     return null;

@@ -15,4 +15,5 @@ alice_payloads
 bob_payloads
 logs
 node_modules
-/package-lock.json
+/received.sql
+/response.txt

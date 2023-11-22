@@ -41,7 +41,7 @@
                         return `${fileText}`;
                     }
                     else {
-                        return `Bob: ${fileText}`;
+                        return `${fileText.trim().replace(/^Output:\s*/, '')}`;
                     }
                 } else {
                     return null;
@@ -52,11 +52,12 @@
     }
 }
 
-
-        async function logLatestMessage(message) {
-            const latestMessageElement = document.getElementById("latestMessage");
-            latestMessageElement.textContent = message;
-        }
+async function logLatestMessage(message) {
+    const latestMessageElement = document.getElementById("latestMessage");
+    message = message.replace(/\) \[/g, ')\n['); // Replace white space with line break
+    message = message.replace(/\n/g, '<br>'); // Replace newline character with <br> tag
+    latestMessageElement.innerHTML = message;
+}
 
         async function updateLatestMessagePeriodically() {
             while (true) {
